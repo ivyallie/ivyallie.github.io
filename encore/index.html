@@ -1,0 +1,24 @@
+---
+title: Encore!
+layout: default
+---
+<p><strong>Why people still listen to classical music&mdash;and why you should, too.</strong></p>
+<p>This introduction to classical music was originally published as a book in 2016, but I'm currently in the process
+of porting it to my website, where it will be able to incorporate audio clips and give me the potential to expand it
+as I see fit. </p>
+<p>From the introduction: <em>This book is for the newcomer, the curious listener who wants to learn about classical music but doesn’t know where to start. The world of classical music is vast and complicated, and most books on the subject approach it academically. For our exploration, we will listen to the music as its audiences originally did: as music. Doctoral dissertations can and have been written about these works, but what keeps them around is that people still enjoy listening to them. You will too.</em></p>
+<h3>Table of Contents</h3>
+<ol>
+    {% for item in site.data.encore.docs %}
+        {% if item.excludeTOC != 1 %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% if item.subpages %}
+                <ol>
+                    {% for sp in item.subpages %}
+                    <li><a href="{{ sp.url }}">{{ sp.title }}</a></li>
+                    {% endfor %}
+                </ol>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ol>

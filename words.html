@@ -1,0 +1,75 @@
+---
+title: Words
+permalink: /words/
+layout: default
+---
+<p>Bits and pieces of writing.</p>
+<div class="columnar">
+    <div>
+        <h2>About films</h2>
+        <ul>
+
+            {% for post in site.categories.films %}
+            {% include get_posts.html %}
+            {% endfor %}
+            <li><a href="https://letterboxd.com/ivyallie/">More on Letterboxd &raquo;</a></li>
+        </ul>
+        <h2>About video games</h2>
+        <ul>
+            <li><a href="/myst">Myst in Retrospect</a></li>
+            {% for post in site.categories.videogames %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul>
+        <h2>About music</h2>
+        <ul>
+            <li><a href="/encore/">Encore!: An Introduction to Classical Music</a></li>
+        </ul>
+
+        <h2>About television</h2>
+        <ul>
+            {% for post in site.categories.television %}
+            {% include get_posts.html %}
+            {% endfor %}
+           </ul>
+            <h2>About comics</h2>
+        <ul>
+            {% for post in site.categories.comics %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h2>About books</h2>
+        <ul>
+            {% for post in site.categories.books %}
+            {% include get_posts.html %}
+            {% endfor %}
+            <li><h3>Books of My Childhood</h3>
+        <ul>
+            {% for post in site.categories.booksofmychildhood %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul></li>
+            <li>
+                <h3>A Cavalcade of Covers</h3>
+        <ul>
+            {% for post in site.categories.cavalcade %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul>
+            </li>
+        </ul>
+
+
+
+
+        
+        <h2>Miscellaneous</h2>
+        <ul>
+            {% for post in site.categories.miscellaneous %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

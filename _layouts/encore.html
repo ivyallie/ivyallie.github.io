@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign index = 0 %}
+{% for item in site.data.encore.docs %}
+    {% if item.url == page.url %}
+<nav class="nav_encore">
+    <div>
+        {% if forloop.first %}
+        &nbsp;
+        {% else %}
+            {% assign previous = forloop.index0 | minus: 1  %}
+                <a href="{{ site.data.encore.docs[previous].url }}">&laquo; {{ site.data.encore.docs[previous].title }}</a>
+
+        {% endif %}
+    </div>
+    <div>
+        <a href="/encore">Table of Contents</a>
+    </div>
+    <div>
+        {% if forloop.last %}
+        &nbsp;
+        {% else %}
+            {% assign next = forloop.index0 | plus: 1 %}
+        <a href="{{ site.data.encore.docs[next].url }}">Next: {{ site.data.encore.docs[next].title }} &raquo;</a>
+        {% endif %}
+    </div>
+</nav>
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+
+
+

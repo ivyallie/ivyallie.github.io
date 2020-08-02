@@ -1,0 +1,526 @@
+* {
+    margin:0;
+}
+
+html, body {
+       font-family:'Alegreya', serif;
+}
+
+h1,h2,h3,h4 {
+    margin: 20pt 0 10pt 0;
+    font-family:'Yatra One', serif;
+    font-weight:normal;
+}
+
+h3 {font-size:1.4em;}
+
+h1:first-of-type {
+    margin-top:0;
+}
+
+#topbar {
+    width:100%;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+
+    box-shadow: 0 0 10px rgba(00,00,00,0.3);
+    overflow:hidden
+}
+
+#topbar div {
+    margin:.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#topbar nav li {
+    display: inline;
+}
+
+#topbar nav li a {
+    margin:0 .25em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Yatra One', sans-serif;
+    padding:.1em .35em;
+    border-radius:.25em;
+}
+
+#topbar ul {
+    padding:0;
+    margin-right:1em;
+}
+
+#topbar h1 {
+    margin:0 0 0 .5em;
+    font-size:30pt;
+}
+
+#topbar h1 a {
+    text-decoration:none;
+}
+
+li h3 {
+    font-size:1em;
+}
+
+
+
+#content {
+    margin: 2em 2em 5em 2em;
+}
+
+figure {
+    margin:0 .5em 1em .5em;
+    padding: 0 .75em;
+}
+
+
+#content img {
+    max-width: 100%;
+    height:auto;
+    margin:.75em 0;
+}
+
+#content p img, #content figure img {
+    max-width: 100%;
+    height:auto;
+    margin:auto;
+    display:block;
+}
+
+figcaption {
+    text-align: center;
+    color:#333;
+    border-bottom:1px solid;
+    margin: 1em auto .5em auto;
+    padding-bottom:.5em;
+    font-size:.9em;
+}
+
+#content p, #content blockquote {
+    margin-bottom:1em;
+    text-indent:2em;
+    line-height:1.6em;
+    font-size:1.1em;
+}
+
+
+#content li p {
+    text-indent: 0;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+blockquote {
+    width:80%;
+    margin: 0 auto;
+}
+
+#content blockquote p {
+    text-indent: 0;
+    font-size:1em;
+}
+
+
+#content p.aside {
+    float:right;
+    width:25%;
+    text-indent:0;
+    margin-left:1em;
+    font-size:.9em;
+    border-left:1px solid;
+    padding-left:1em;
+}
+
+.tags {
+    border:1px solid;
+    margin: 1em 0;
+    padding:1em;
+}
+
+.tags ul {
+    display:inline;
+    padding:0;
+}
+
+.tags li {
+    display:inline;
+}
+
+.tags li::after {
+    content:","
+}
+
+.tags li:last-child::after {
+    content:"."
+}
+
+#footer {
+    text-align:center;
+    padding:2em;
+}
+
+#footer p {
+    margin:.5em;
+    text-shadow:#0047a1 0 0 2px;
+}
+
+#footer a {
+    color:white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration:underline;
+}
+
+.resume dt {
+    font-weight: bold;
+    float:left;
+    clear:both;
+}
+
+.resume dt::after {
+    content:":";
+}
+
+.resume dd {
+    display:inline-block;
+    margin-left:1em;
+    float:left;
+}
+
+.resume dl {
+    overflow:hidden;
+    margin:auto;
+}
+
+.resume h2 {
+    text-align:center;
+}
+
+.job {
+    border:1px solid;
+    border-radius:.25em;
+    padding:2em 3em;
+    margin-bottom:1em;
+}
+
+.job h3 {
+    margin:0;
+    float:left;
+}
+
+.job .corporation_description {
+    float:right;
+    font-size:.8em;
+    width:40%;
+    font-style:italic;
+}
+
+.job_title {
+    clear: both;
+    display: block;
+    margin-top:3em;
+    font-weight:bold;
+}
+
+.job lh {
+    font-weight:bold;
+    margin-bottom:.5em;
+    display: inline-block;
+}
+
+.columnar {
+    display: flex;
+    align-items:flex-start;
+}
+
+.columnar div {
+    flex-grow:1;
+    margin:0 1em;
+    flex-basis:45%;
+}
+
+.title-index a {
+    font-weight:bold;
+}
+
+li {
+    line-height: 1.6em;
+    margin-bottom:.8em;
+}
+
+.returnbutton {
+    display:inline-block;
+    margin:auto;
+    text-decoration:none;
+    text-transform:uppercase;
+    border:.06em solid;
+    padding:.5em 1em;
+    font-weight:bold;
+    border-radius:2em;
+}
+
+.center {
+    text-align:center;
+}
+
+.supertitle, .subtitle {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.post_title {margin:0;}
+
+.portfolio_double {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio_double div {
+    flex-basis:50%;
+    margin:1em;
+}
+
+.portfolio_double div img {
+    width:100%;
+}
+
+.portfolio_single {
+    display: grid;
+    height:100%;
+}
+
+#content .portfolio_single img {
+    max-width:100%;
+    max-height:calc(100vh - 7em);
+    margin:1em auto;
+}
+
+#content p.datestamp {
+    text-indent: 0;
+    margin-top:.75em;
+}
+
+#content .comiclisting img {
+    max-width: 75%;
+    display: block;
+    margin:1em auto;
+}
+
+.comiclisting {
+    border: 1px solid #aaa;
+    border-radius:1em;
+    padding:1em;
+    margin-bottom:1em;
+}
+
+.comiclisting h3 {
+    margin-top:0;
+    text-align: center;
+}
+
+#spreads {
+    width: 90%;
+    display: block;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+#spreads img.single {
+    margin:auto;
+    max-height:100%;
+}
+
+.comic_spread {
+    overflow: hidden;
+    max-height: 100%;
+    margin-top: 10pt;
+}
+
+.comic_spread img {
+    width:50%;
+    float:left;
+}
+
+#content .no-indent p {
+    text-indent:0;
+}
+
+.navbutton {
+    width:2em;
+    height:2em;
+    padding:0;
+    border:1px solid;
+    border-radius: .4em;
+    cursor:pointer;
+    margin:2px;
+}
+
+.navbutton:focus {
+    outline: none;
+}
+
+
+
+.navbutton svg {
+    width:100%;
+    height:100%;
+}
+
+#showNav {
+    display: none;
+}
+
+#nav-overlay {
+    position:fixed;
+    width:0;
+    height:100%;
+    background-color:rgba(0,0,0,.9);
+    z-index:2;
+    overflow:hidden;
+    right:0;
+    color:white;
+    text-align:center;
+    padding-top:2em;
+    font-size:20pt;
+    transition: width .2s;
+}
+
+#nav-overlay li {
+    list-style: none;
+    margin-bottom:1em;
+    font-family: 'Yatra One', sans-serif;
+}
+
+#nav-overlay a {
+    text-decoration:none;
+    color:#fff;
+    text-transform: uppercase;
+    padding:.1em;
+
+}
+
+
+
+#close-overlay {
+    cursor:pointer;
+    font-size:36pt;
+}
+
+.nav_encore {
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+.nav_encore div {
+    width:33%;
+    text-align: center;
+}
+
+.nav_encore div:first-of-type {
+    text-align: left;
+}
+
+.nav_encore div:last-of-type {
+    text-align: right;
+    font-weight: bold;
+}
+
+.encore_player {
+    float:left;
+    display: flex;
+    margin: 0 20pt 10pt 0;
+    flex-direction: column;
+    clear: both;
+}
+
+
+
+.encore_player h3 {
+    margin-top: 0;
+    font-size:14pt;
+}
+
+.encore_works_list {
+    width:50%;
+    font-size:10pt;
+    border:1px solid #AAA;
+    padding:15pt;
+    margin-bottom: 10pt;
+}
+
+.encore_works_list li {
+    list-style: none;
+}
+
+.encore_works_list li:last-of-type, #content .encore_works_list li:last-of-type p {
+    margin-bottom: 0;
+}
+
+#content .encore_works_list p {
+    text-indent: 0;
+}
+
+.encore_player h4{
+    margin: 0;
+}
+
+.encore_player iframe {
+    margin-bottom: 10pt;
+}
+
+
+
+@media screen and (min-width: 1050px) {
+    #content {
+        max-width:1000px;
+        margin: 2em auto 5em auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .disposable {
+        display: none;
+    }
+
+    .portfolio_double {
+        flex-direction: column;
+    }
+
+    .columnar {
+        flex-direction: column;
+    }
+
+    #content .comiclisting img {
+        max-width: 100%;
+    }
+
+    .job .corporation_description {
+        float:left;
+        width:100%;
+        font-size:1em;
+        margin-bottom:.5em;
+    }
+
+    #content .job p.job_description {
+        text-indent: 0;
+    }
+
+    .job ul {
+        margin-left:-3em;
+    }
+
+    #showNav {
+        display: inline;
+        margin-left:2em;
+    }
+}

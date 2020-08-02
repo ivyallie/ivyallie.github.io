@@ -1,0 +1,561 @@
+---
+layout: barebones
+permalink: /calculator/
+title: The Cartoonist's Calculator
+---
+<div id="calculator">
+    {% include title_block.html %}
+<link rel="stylesheet" href="/assets/css/calc.css"/>
+<div class="ruler_box section" id="ruler_vis">
+    <img src="/assets/images/calculator/icon_rulerviz.gif" alt="Inch Ruler Visualizer Icon"/>
+
+    <div class="input">
+        <h2 id="ruler">Inch Ruler Visualizer</h2>
+    <p><strong>Tip:</strong> Click red-underlined numbers to visualize them on the ruler. Try this one: <span onclick="sendToRuler(this)" class="sendable">16.4</span></p>
+        <form oninput="makeRuler()">
+
+            <input min="0" type="number" inputmode="decimal" id="measurement" value="4.8" onkeydown="return event.key != 'Enter';">
+        <label for="measurement" class="fixed">inches</label>
+
+        <input type="checkbox" value="thirtytwo" id="thirtytwo"/>
+        <label for="thirtytwo" class="fixed">Show <sup>1</sup>&frasl;<sub>32</sub> marks</label>
+
+
+
+    </form></div>
+    <div class="result">
+        <canvas class="ruler" id="canvas" width="150px;" height="90px;" >
+
+</canvas>
+    </div>
+
+
+</div>
+<div class="section">
+    <img src="/assets/images/calculator/icon_panelsplit.gif" alt="Equal panel split calculator icon" />
+    <div class="input"><h2>Equal panel split calculator</h2>
+    <p>Divide up a tier or page into equally-sized sections, taking gutter width into account.</p>
+    <p>For example, to find the height of four equal-height tiers, on a page 12 inches high, with .25 inch gutters, you would enter: 12, 4, 0.25</p>
+    <form oninput="panelSplits()">
+
+        <label for="splitspan">Length of tier/page:</label>
+        <input id="splitspan" value="9" type="number" inputmode="decimal" min="0"/>
+        <label for="sections">Number of sections:</label>
+        <input id="sections" value="3" type="number" inputmode="decimal" min="0"/>
+        <label for="gutters">Gutter width:</label>
+        <input id="gutters" value="0.25" type="number" inputmode="decimal" min="0"/>
+
+
+
+    </form></div>
+
+    <div class="result">
+    <div>Section length: <span id="split_result" onclick="sendToRuler(this)" class="sendable"></span></div>
+    </div>
+</div>
+
+<div class="section">
+    <img src="/assets/images/calculator/icon_percent.gif"/>
+    <div class="input"><h2>Resize by Percentage</h2>
+    <div>
+<form oninput="percentScale('inwidth1','inheight1','percent1','outwidth1','outheight1')">
+    <label for="inwidth1">Width:</label>
+    <input id="inwidth1" value="8.5" type="number" inputmode="decimal" min="0"/>
+        <label for="inheight1" >Height:</label>
+    <input id="inheight1" value="11" type="number" inputmode="decimal"/>
+        <label for="percent1" >Percentage:</label>
+
+    <input id="percent1" value="113" type="number" inputmode="decimal"/>
+    </div>
+
+</form>
+
+    </div>
+<div class="result">
+    <div>Resized Width = <span id="outwidth1" onclick="sendToRuler(this)" class="sendable"></span></div>
+    <div>Resized Height = <span id="outheight1" onclick="sendToRuler(this)" class="sendable"></span></div>
+        <div>To reverse this operation, scale to <span id="reverse-percent">xx%</span></div>
+        <button type="button" onclick="sendToDPICalc('outwidth1','outheight1')">Send to DPI Calculator &raquo;</button>
+        </div>
+
+</div>
+
+
+
+<div class="section" id="resize_calc">
+    <img src="/assets/images/calculator/icon_scale.gif"/>
+    <div class="input"><h2>Resize Page</h2>
+    <p>Calculate enlargement or reduction sizes.</p>
+    <form oninput="AspectAwareScale()">
+        <div>
+            <label for="inwidth2">Starting Width:</label>
+        <input id="inwidth2" value="8.5" type="number" inputmode="decimal"/>
+        <label for="inheight2">Starting Height:</label>
+        <input id="inheight2" value="11" type="number" inputmode="decimal"/>
+        </div>
+
+        <div><label for="newwidth">New Width:</label>
+        <input id="newwidth" value="17" onfocus="clearOther('newheight')" type="number" inputmode="decimal"/>
+        <label for="newheight">New Height</label>
+        <input id="newheight" value="" onfocus="clearOther('newwidth')" type="number" inputmode="decimal"/></div>
+        <button type=button onclick="reverseFields('inwidth2','inheight2'); reverseFields('newwidth','newheight');AspectAwareScale()" class="blue">Rotate 90&deg;</button>
+    </form></div>
+
+    <div class="result">
+        <p>New dimensions: <span style="display: inline-block;"><span onclick="sendToRuler(this)" class="sendable" id="newwidth_out">17</span> x <span onclick="sendToRuler(this)" class="sendable" id="newheight_out">22</span></span>.</p>
+        <p>The aspect ratio is <span id="aspectratio">x</span></p>
+        <p>This is a <span id="scale_amount">200%</span> change.</p>
+        <p>To reverse this operation, scale to <span id="reverse_scale">xx%</span></p>
+        <button type="button" onclick="sendToDPICalc('newwidth_out','newheight_out')">Send to DPI Calculator &raquo;</button>
+        </div>
+</div>
+
+<div class="section" id="itp_section">
+    <img src="/assets/images/calculator/icon_dpi.gif" alt="DPI Calculator icon"/>
+    <div class="input">
+    <h2>DPI Calculator (Inches to Pixels)</h2>
+    <p>Calculate the digital dimensions for an image of a certain size.</p>
+    <form oninput="inchToPixel()">
+        <div><label for="ITP_width">Width:</label>
+        <input id="ITP_width" value="8.5" type="number" inputmode="decimal">
+        <label for="ITP_height">Height:</label>
+        <input id="ITP_height" value="11" type="number" inputmode="decimal">
+        <label for="ITP_density">Pixels per inch (PPI/DPI)</label>
+        <input id="ITP_density" value="600" type="number" inputmode="numeric"></div>
+        <div>
+            <span>Input Units: </span><label for="isInches">Inches</label>
+        <input name="unit" id="isInches" value="in" type="radio" checked="true">
+        <label for="isCentimeters">Centimeters</label>
+        <input name="unit" id="isCentimeters" value="cm" type="radio"></div>
+
+    </form>
+
+</div>
+    <div class="result">
+        <p>Pixel dimensions are <span id="pix_width">4000</span> x <span id="pix_height">22000</span>.</p>
+        <p>This is a <span id="megapixels">10</span> megapixel image.</p></div>
+</div>
+
+<div class="section">
+    <img src="/assets/images/calculator/icon_printsize.gif" alt="Print size calculator"/>
+    <div class="input">
+    <h2>Print Size Calculator (Pixels to Inches)</h2>
+    <p>Calculate the sizes a digital image can be reproduced at.</p>
+    <form oninput="pixelToInch()">
+        <label for="xpixels">Pixel width</label>
+        <input id="xpixels" value="8500" type="number" inputmode="numeric">
+        <label for="ypixels">Pixel height</label>
+        <input id="ypixels" value="11000" type="number" inputmode="numeric">
+        <label for="pti_density">Pixels per inch (PPI/DPI)</label>
+        <input id="pti_density" value="100" type="number" inputmode="numeric">
+        <div><span>Output units:</span>
+        <label for="isInches_pti">Inches</label>
+        <input name="unit_pti" id="isInches_pti" value="in" type="radio" checked="true">
+        <label for="isCentimeters_pti">Centimeters</label>
+        <input name="unit_pti" id="isCentimeters_pti" value="cm" type="radio"></div>
+    </form>
+        </div>
+    <div class="result">
+        <p>At <span id="pti_density_out">100</span> DPI, this image will reproduce at <span id="pti_width_out" onclick="sendToRuler(this)" class="sendable">8.5</span><span id="wd_unit_ppi">in</span> &times; <span id="pti_height_out" onclick="sendToRuler(this)" class="sendable">11</span><span id="hg_unit_ppi">in</span>.</p>
+    </div>
+</div>
+
+<div class="section" id="live_area_calculator">
+    <img src="/assets/images/calculator/icon_livearea.gif" alt="Live Area Calculator Icon" />
+    <div class="input">
+    <h2>Live Area Calculator</h2>
+    <p>Calculate the "live area" of a page (page size - margin).</p>
+    <form oninput="liveArea2('live_area_calculator',-1)">
+        <label for="mc_pagewidth">Page Width:</label>
+        <input id="mc_pagewidth" class="width_in" value="8.5" type="number" inputmode="decimal">
+        <label for="mc_pageheight">Page Height:</label>
+        <input id="mc_pageheight" class="height_in" value="11" type="number" inputmode="decimal">
+        <label for="mc_margin" >Margin:</label>
+        <input id="mc_margin" class="margin_in" value=".75" type="number" inputmode="decimal">
+    </form>
+        </div>
+    <div class="result">
+        <p>The live area of this page is <span id="mc_livewidth" onclick="sendToRuler(this)" class="width_out sendable">10</span> &times; <span id="mc_liveheight" onclick="sendToRuler(this)" class="height_out sendable">20</span>.</p>
+        <p>The aspect ratio of the live area is <span id="mc_live_aspect" class="aspect_out">1.5</span></p>
+        <button type="button" onclick="sendToResize(this)">Send to Resizing Calculator &raquo;</button>
+        <button type="button" onclick="sendToDPICalc('mc_livewidth','mc_liveheight')">Send to DPI Calculator &raquo;</button>
+    </div>
+</div>
+
+<div class="section" id="bleed_area_calculator">
+    <img src="/assets/images/calculator/icon_bleed.gif" alt="Bleed Area Calculator icon"/>
+    <div class="input">
+    <h2>Bleed Area Calculator</h2>
+    <p>Calculate the size at which to work when drawing full-bleed artwork (page size+bleed area)</p>
+    <form oninput="liveArea2('bleed_area_calculator',1)">
+        <label for="bleed_pagewidth" >Page Width:</label>
+        <input id="bleed_pagewidth" class="width_in" value="8.5" type="number" inputmode="decimal">
+        <label for="bleed_pageheight">Page Height:</label>
+        <input id="bleed_pageheight" class="height_in" value="11" type="number" inputmode="decimal">
+        <label for="bleed_margin" >Bleed amount:</label>
+        <input id="bleed_margin" class="margin_in" value=".2" type="number" inputmode="decimal">
+    </form>
+        </div>
+    <div class="result">
+        <p>The dimensions of the full-bleed artwork are <span id="bleed_width" onclick="sendToRuler(this)" class="width_out sendable">10</span> &times; <span id="bleed_height" onclick="sendToRuler(this)" class="height_out sendable">20</span>.</p>
+        <p>The aspect ratio of the full-bleed artwork is <span class="aspect_out">1.5</span></p>
+        <button type="button" onclick="sendToResize(this)">Send to Resizing Calculator &raquo;</button>
+        <button type="button" onclick="sendToDPICalc('bleed_width','bleed_height')">Send to DPI Calculator &raquo;</button>
+    </div>
+</div>
+    </div>
+
+
+<script type="application/javascript">
+
+    function percentScale(width,height,percent,owidth,oheight) {
+        console.log('hello');
+        let inWidth = document.getElementById(width).value;
+        console.log(inWidth);
+        let inHeight = document.getElementById(height).value;
+        let percentage = document.getElementById(percent).value/100;
+        let outWidth = document.getElementById(owidth);
+        let outHeight = document.getElementById(oheight);
+        let reversePercent = document.getElementById('reverse-percent');
+        outWidth.innerHTML = (inWidth*percentage).toFixed(2);
+        outHeight.innerHTML = (inHeight*percentage).toFixed(2);
+        reversePercent.innerHTML = (100 / percentage).toFixed(2)+"%";
+    }
+
+
+    function panelSplits() {
+        let length = document.getElementById('splitspan').value;
+        let sections = document.getElementById('sections').value;
+        let gutters = document.getElementById('gutters').value;
+        let result = document.getElementById('split_result');
+        let splits = sections - 1;
+        let usable_length = length - (gutters*splits);
+        let section_length = usable_length/sections;
+        if (section_length>0 && section_length!==Infinity) {
+                result.innerHTML = section_length.toFixed(2);
+
+        } else {
+            result.innerHTML = "";
+        }
+
+    }
+
+    function sendToRuler(el) {
+        let input_value = el.innerHTML;
+        let ruler_value = document.getElementById('measurement');
+        ruler_value.value = input_value;
+        makeRuler();
+        document.getElementById('ruler_vis').scrollIntoView();
+    }
+
+
+    function makeRuler() {
+        let canvas = document.getElementById('canvas');
+
+        let measurement = parseFloat(document.getElementById('measurement').value);
+        let inch = splitDecimal(measurement);
+
+        let percent = inch[1];
+        let left_number = inch[0];
+        let width = canvas.width;
+        let height = canvas.height;
+        let ruler_bottom = height*0.75;
+        if (canvas.getContext) {
+            let ctx = canvas.getContext('2d');
+            ctx.moveTo(0,0);
+            ctx.clearRect(0,0,width,height);
+            ctx.beginPath();
+            ctx.closePath();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 2;
+
+            // make ruler ends
+            ctx.beginPath();
+            ctx.moveTo(0,0);
+            ctx.lineTo(0,ruler_bottom);
+            ctx.stroke();
+            ctx.moveTo(width,0);
+            ctx.lineTo(width,ruler_bottom);
+            ctx.stroke();
+            ctx.closePath();
+
+            // make ruler midpoint
+            ctx.beginPath();
+            ctx.moveTo(width*0.5,10);
+            ctx.lineTo(width*0.5,ruler_bottom);
+            ctx.stroke();
+            ctx.closePath();
+
+            //make quarter marks
+           displaceMarks(ctx,0.25,20);
+
+            //make eighth marks
+           displaceMarks(ctx,0.125,30);
+
+           //make sixteenth marks
+            displaceMarks(ctx,0.0625,40);
+
+           //make thirty-seconds marks
+            let thirtytwo_check = document.getElementById("thirtytwo");
+            if (thirtytwo_check.checked) { displaceMarks(ctx,0.03125,45);}
+
+            //make cursor
+            ctx.strokeStyle = 'red';
+            ctx.beginPath();
+            ctx.moveTo(width*percent,0);
+            ctx.lineTo(width*percent,ruler_bottom);
+            ctx.stroke();
+            ctx.closePath();
+
+            //make legend
+            if (isNaN(left_number)===false) {
+                ctx.font = '14pt serif';
+                ctx.textAlign = 'left';
+                ctx.fillText(left_number.toString(), 0, height);
+                ctx.textAlign = 'right';
+                ctx.fillText((left_number + 1).toString(), width, height);
+            }
+
+        }
+
+        function displaceMarks(ctx,factor,height) {
+            let displace = factor;
+            let iter = 1;
+            while (displace < 1) {
+
+                if ((iter % 2 )!==0) {
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(width*displace,height);
+                    ctx.lineTo(width*displace,ruler_bottom);
+                    ctx.stroke();
+                    ctx.closePath();
+                };
+                displace = displace + factor;
+                iter=iter+1;
+
+            }
+        }
+
+    }
+
+    function splitDecimal(value) {
+    let integer = value.toString().split(".")[0];
+    let fraction = "."+value.toString().split(".")[1];
+    return [parseInt(integer,10), fraction]
+}
+    function isNumber(value) {
+        return !(isNaN(value)) && (value !== null) && (value !== "");
+    }
+
+    function aspectRatio(width,height) {
+            return (width/height).toFixed(2)
+        }
+
+    function AspectAwareScale() {
+        let inWidth = document.getElementById('inwidth2');
+        let inHeight = document.getElementById('inheight2');
+        let newWidth = document.getElementById('newwidth');
+        let newHeight = document.getElementById('newheight');
+        let newwidth_out = document.getElementById('newwidth_out');
+        let newheight_out = document.getElementById('newheight_out');
+        let aspectratio = document.getElementById('aspectratio');
+        let scale_amount = document.getElementById('scale_amount');
+        let reverse_scale = document.getElementById('reverse_scale');
+
+        let scale_factor;
+
+        function doScale(factor) {
+            if (isNumber(inWidth.value) && isNumber(inHeight.value)) {
+                newwidth_out.innerHTML = (inWidth.value*factor).toFixed(2);
+                newheight_out.innerHTML = (inHeight.value*factor).toFixed(2);
+                aspectratio.innerHTML = aspectRatio(inWidth.value,inHeight.value);
+                let percentage = (factor*100).toFixed(2);
+                scale_amount.innerHTML = percentage.toString() + "%";
+                reverse_scale.innerHTML = ((100/percentage)*100).toFixed(2).toString() + "%";
+
+            } else {
+                blankFields();
+            }
+
+        }
+
+
+
+        function blankFields(){
+            newwidth_out.innerHTML = "[]";
+            newheight_out.innerHTML = "[]";
+            aspectratio.innerHTML = "[]";
+            scale_amount.innerHTML = "[]";
+        }
+
+        if (isNumber(newWidth.value)) {
+            scale_factor = newWidth.value/inWidth.value;
+            doScale(scale_factor);
+
+        } else if  (isNumber(newHeight.value)) {
+            scale_factor = newHeight.value/inHeight.value;
+            doScale(scale_factor);
+
+        } else {
+            scale_factor = null ;
+            blankFields();}
+
+    }
+
+    function reverseFields(element1,element2) {
+        let first = document.getElementById(element1);
+        let second = document.getElementById(element2);
+        let first_value = first.value;
+        let second_value = second.value;
+        first.value = second_value;
+        second.value = first_value;
+    }
+
+    function sendToDPICalc(width,height) {
+        let fromWidth = document.getElementById(width);
+        let fromHeight = document.getElementById(height);
+        let toWidth = document.getElementById('ITP_width');
+        let toHeight = document.getElementById('ITP_height');
+
+        toWidth.value = fromWidth.innerHTML;
+        toHeight.value = fromHeight.innerHTML;
+        inchToPixel();
+        let element = document.getElementById('itp_section');
+        element.scrollIntoView();
+        element.focus();
+    }
+
+    function sendToResize(element) {
+        let parent = element.parentElement;
+        let width = parent.getElementsByClassName('width_out')[0];
+        let height = parent.getElementsByClassName('height_out')[0];
+        let resizeInWidth = document.getElementById('inwidth2');
+        let resizeInHeight = document.getElementById('inheight2');
+
+        resizeInWidth.value = width.innerHTML;
+        resizeInHeight.value = height.innerHTML;
+        document.getElementById('resize_calc').scrollIntoView();
+    }
+
+    function inchToPixel() {
+        let ruler_width = document.getElementById('ITP_width');
+        let ruler_height = document.getElementById('ITP_height');
+        let dpi = document.getElementById('ITP_density');
+        let unit_type = document.querySelector('input[name="unit"]:checked').value;
+        let width;
+        let height;
+        let pixwidth_display = document.getElementById('pix_width');
+        let pixheight_display = document.getElementById('pix_height');
+        let megapixel_display = document.getElementById('megapixels');
+
+        if (isNumber(ruler_width.value) && isNumber(ruler_height.value) && isNumber(dpi.value)) {
+            if (unit_type==='cm') {
+            width = ((ruler_width.value)/2.54).toFixed(2);
+            height = ((ruler_height.value)/2.54).toFixed(2);
+        } else {
+            width = ruler_width.value;
+            height = ruler_height.value;
+        }
+            let pixheight = height * dpi.value;
+            let pixwidth = width * dpi.value;
+            pixheight_display.innerHTML = pixheight.toFixed(0).toString();
+            pixwidth_display.innerHTML = pixwidth.toFixed(0).toString();
+
+            let pixels = pixheight * pixwidth;
+            let megapixels = pixels / 1000000;
+            megapixel_display.innerHTML = megapixels.toFixed(2).toString();
+
+        }
+
+    }
+
+    function get_element(name) {
+        return document.getElementById(name);
+    }
+
+    function pixelToInch() {
+        let xpixels = get_element('xpixels');
+        let ypixels = get_element('ypixels');
+        let density = get_element('pti_density');
+        let width_out = get_element('pti_width_out');
+        let height_out = get_element('pti_height_out');
+        let density_out = get_element('pti_density_out');
+        let unit_type = document.querySelector('input[name="unit_pti"]:checked').value;
+        let wd_unit_display = get_element('wd_unit_ppi');
+        let hg_unit_display = get_element('hg_unit_ppi');
+        let width;
+        let height;
+        if (isNumber(xpixels.value) && isNumber(ypixels.value) && isNumber(density.value)) {
+            if (unit_type==="cm") {
+                width = ((xpixels.value/density.value)*2.54).toFixed(2);
+                height = ((ypixels.value/density.value)*2.54).toFixed(2);
+
+            } else {
+                width = ((xpixels.value/density.value)).toFixed(2);
+                height = ((ypixels.value/density.value)).toFixed(2);
+            }
+            density_out.innerHTML = density.value;
+            width_out.innerHTML = width.toString();
+            height_out.innerHTML = height.toString();
+            hg_unit_display.innerHTML = unit_type;
+            wd_unit_display.innerHTML = unit_type;
+        } else {
+            density_out.innerHTML = "[]";
+             width_out.innerHTML = "[]";
+            height_out.innerHTML = "[]";
+            hg_unit_display.innerHTML = "[]";
+            wd_unit_display.innerHTML = "[]";
+        }
+
+    }
+
+    function liveArea2(parent_id,direction) {
+        let parent_element = get_element(parent_id);
+        let pagewidth = parent_element.getElementsByClassName('width_in')[0];
+        let pageheight = parent_element.getElementsByClassName('height_in')[0];
+        let margin_in = parent_element.getElementsByClassName('margin_in')[0];
+        let livewidth_out = parent_element.getElementsByClassName('width_out')[0];
+        let liveheight_out = parent_element.getElementsByClassName('height_out')[0];
+        let aspect_out = parent_element.getElementsByClassName('aspect_out')[0];
+
+        if (isNumber(pagewidth.value) && isNumber(pageheight.value) && isNumber(margin_in.value)) {
+            let w = parseFloat(pagewidth.value);
+            let h = parseFloat(pageheight.value);
+            let m = parseFloat(margin_in.value);
+            let livearea = uniformScale(w,h,m,direction);
+            let livewidth = livearea[0];
+            let liveheight = livearea[1];
+            let liveaspect = aspectRatio(livewidth,liveheight);
+
+            livewidth_out.innerHTML = livewidth;
+            liveheight_out.innerHTML = liveheight;
+            aspect_out.innerHTML = liveaspect;
+
+        } else {
+            livewidth_out.innerHTML = "[]";
+            liveheight_out.innerHTML = "[]";
+            aspect_out.innerHTML = "[]";
+        }
+
+
+    }
+
+
+    function uniformScale(width,height,amount,direction) {
+        let factor;
+        if (direction<0) {
+            factor = -2;
+        } else {factor=2}
+
+        let scale_amount = amount*factor;
+        return [(width+scale_amount).toFixed(2), (height+scale_amount).toFixed(2)]
+    }
+
+    function clearOther(element) {
+        let clear = document.getElementById(element);
+        clear.value = null;
+    }
+
+</script>
+

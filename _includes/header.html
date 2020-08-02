@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% if page.supertitle %}
+        <title>{{ page.supertitle }}&colon; {{ page.title }} // Ivy Allie</title>
+      {% else %}
+        <title>{{ page.title }} // Ivy Allie</title>
+      {% endif %}
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/light.css" id="colorscheme"/>
+      <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,900|Yatra+One" rel="stylesheet">
+        <link rel="shortcut icon" type="image/ico" href="/assets/favicon.ico" />
+      {% feed_meta %}
+      {% seo title=false %}
+  </head>
+  <body>
+      {% include overlay.html %}
+    {% include topbar.html %}

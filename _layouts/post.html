@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<p class="datestamp">Posted {{ page.date | date_to_string }}</p>
+{{ content }}
+<div class="tags">
+    <span>Some tags:</span>
+    <ul>
+        {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+    </ul>
+</div>

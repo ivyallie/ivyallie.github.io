@@ -1,0 +1,11 @@
+{% for post in site.posts limit:5 %}
+<li><a href="{{ BASE_PATH }}{{ post.url }}">
+{% if post.supertitle %}
+    {{post.supertitle}}&colon; 
+    {% endif %}
+{{ post.title }}</a>
+{% if post.description %}
+    <br>{{ post.description }}
+    {% endif %}
+</li>
+{% endfor %}

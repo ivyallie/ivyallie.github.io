@@ -1,0 +1,10 @@
+  {% if page.hidetitle %}
+    {% else %}
+      {% if page.supertitle %}
+        <h2 class="supertitle">{{ page.supertitle }}</h2>
+      {% endif %}
+      <h1 class="post_title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <h2 class="subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+  {% endif %}

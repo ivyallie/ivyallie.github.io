@@ -1,0 +1,105 @@
+h1,h2,h3,h4 {
+    color:#334455;
+}
+
+#topbar {
+        background-color: #fff;
+}
+
+#topbar nav li a {
+    color:#999;
+}
+
+#topbar nav li a:hover {
+    background-color:#277fd9;
+    color:white;
+}
+
+#topbar h1 a {
+    color:#3ea2ff;
+}
+
+#topbar h1 a:hover {
+    color:#277fd9;
+}
+
+figcaption {
+    color:#333;
+    border-color:#999;
+}
+
+a {
+    color:#277fd9;
+}
+
+#content p.datestamp {
+    color:#555;
+}
+
+#content p.aside {
+    border-color:#999;
+}
+
+.tags {
+    color:#555;
+    border-color:#555;
+}
+
+#footer {
+    color:#555;
+}
+
+#footer p {
+    color:white;
+    text-shadow:#0047a1 0 0 2px;
+}
+
+.resume h2 {
+    color:#277fd9;
+}
+
+.job {
+    border-color:#277fd9;
+}
+
+.job h3 {
+    color:#277fd9;
+}
+
+.returnbutton {
+    border-color:#2a7ae2;
+    color:#2a7ae2;
+}
+
+.returnbutton:hover {
+    color:#0047a1;
+    border-color: #0047a1;
+}
+
+.navbutton {
+    background-color: #fff;
+    border-color:#999;
+    color:#999;
+}
+
+.navbutton:hover {
+    border-color: #fff;
+    background-color:#277fd9;
+    color:#fff;
+}
+
+.navbutton:hover svg path {
+    fill:#fff;
+}
+
+.navbutton svg path {
+    fill:#999;
+}
+
+#nav-overlay a:hover {
+    color:#277fd9;
+}
+
+#close-overlay:hover {
+    color:#277fd9;
+}

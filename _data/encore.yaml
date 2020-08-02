@@ -1,0 +1,40 @@
+encore_title: Encore
+
+docs:
+
+  - title: Introduction
+    url: /encore/introduction/
+
+  - title: What is Classical Music?
+    url: /encore/about_classical_music/
+
+  - title: The Baroque Era
+    url: /encore/baroque/
+    subpages:
+      - title: The first virtuoso&#58; Arcangelo Corelli
+        url: /encore/baroque/corelli/
+      - title: A man for all seasons&#58; Antonio Vivaldi
+        url: /encore/baroque/vivaldi/
+      - title: Music for God and king&#58; George Frideric Handel
+        url: /encore/baroque/handel/
+      - title: Musica universalis&#58; Johann Sebastian Bach
+        url: /encore/baroque/bach/
+
+  - title: The first virtuoso&#58; Arcangelo Corelli
+    url: /encore/baroque/corelli/
+    excludeTOC: 1
+
+  - title: A man for all seasons&#58; Antonio Vivaldi
+    url: /encore/baroque/vivaldi/
+    excludeTOC: 1
+
+  - title: Music for God and king&#58; George Frideric Handel
+    url: /encore/baroque/handel/
+    excludeTOC: 1
+
+  - title: Musica universalis&#58; Johann Sebastian Bach
+    url: /encore/baroque/bach/
+    excludeTOC: 1
+
+  - title: Interlude 1&#58; Understanding Titles
+    url: /encore/titles/
