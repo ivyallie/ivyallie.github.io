@@ -1,0 +1,260 @@
+---
+title: Sketchbook Prompt Generator
+permalink: /sketchbook_prompts/
+layout: default
+---
+<p id="output"></p>
+<button onclick="random_function()">Generate</button>
+<p><em>Inspired by concepts suggested by Emil Wilson.</em></p>
+<script>
+    let output = document.getElementById('output');
+
+    let loathed = function () {
+        let choices = [
+            'cars',
+            'horses',
+            'hands',
+            'bicycles',
+            'heads seen from below',
+            'heads seen from above',
+            'buildings in perspective',
+        ];
+        let choice = get_random(choices);
+
+        return "Draw some "+choice+"! (Or something else you hate to draw.)"
+    };
+
+    let settings = function () {
+        let choices = [
+            'poor urban neighborhood',
+            'rich urban neighborhood',
+            'working-class neighborhood',
+            'suburban sprawl',
+            'strip mall wasteland',
+            'bucolic countryside',
+            'highway underpass',
+            'superstore interior',
+            'behind the dumpsters',
+            'comfortable apartment',
+            'basement apartment',
+            'attic',
+            'Grandma\'s house',
+            'opulent estate',
+            'rococo interior',
+            'art museum',
+            'thrift store',
+            'meadow',
+            'dirty beach',
+            'clean beach',
+            'mountain vista',
+            'sleazy bar'
+        ];
+
+        return "Create a setting: "+get_random(choices)
+    };
+
+    let macro = function () {
+        let choices = [
+            'bugs',
+            'eyes',
+            'rocks',
+            'eyes',
+            'food',
+            'skin',
+            'flowers',
+            'fish',
+            'rust'
+        ];
+
+        return 'Draw extreme close-ups of '+get_random(choices)
+    };
+
+    let costume = function () {
+        let choices = [
+            'musketeer',
+            'two-person horse costume',
+            '70s fashion',
+            'costumed mascot character',
+            'tourist',
+            'baroque gentleman',
+            'concert pianist',
+            'punk rocker',
+            'edgy teen',
+            'Victorian lady',
+            'preschool teacher',
+            'natural food store manager'
+        ];
+
+        return 'Focusing on the costume, draw a '+get_random(choices)
+    };
+
+    let caricatures = function() {
+        let celebrity = [
+            'Richard Nixon',
+            'Barack Obama',
+            'Ronald Reagan',
+            'Charlie Chaplin',
+            'Mark Twain',
+            'Albert Einstein',
+            'Marilyn Monroe',
+            'Eleanor Roosevelt',
+            'Marie Curie',
+            'Amelia Earhart',
+            'Steven Spielberg',
+            'Leonard Nimoy',
+            'Georgia O\'Keefe',
+            'JFK',
+            'Stanley Kubrick',
+            'Salvador Dali',
+        ];
+
+        let styles = [
+            'George Herriman',
+            'Chris Ware',
+            'Alison Bechdel',
+            'Charles Schulz',
+            'Gustave Dore',
+            'Picasso',
+            'brutalist architecture',
+            'contour drawing',
+            'children\'s artwork',
+            'Julie Doucet',
+            'Kate Beaton',
+            'Seth',
+            'George Grosz',
+            'John Porcellino',
+            'Raina Telgemeier'
+        ];
+
+        return 'Draw '+get_random(celebrity) +' in the style of '+get_random(styles)
+    };
+
+    let miscellaneous = function () {
+        let choices = [
+            'Draw a famous painting as a cartoon',
+            'Draw a single character at multiple stages of life',
+            'Grab the nearest book, open at random, and draw the first noun that appears on that page',
+            'Imply a specific color in a black and white drawing',
+            'Design a new cover or title treatment for the nearest book',
+            'Design a new cover or title treatment for the last album you listened to'
+        ];
+
+        return get_random(choices)+"."
+    };
+
+    let existing_characters = [
+        'Uncle Sam',
+        'Pillsbury Dough-Boy',
+        'Mr. Peanut',
+        'Robin Hood',
+        'Don Quixote',
+        'Captain Ahab',
+        'Dr. Frankenstein',
+        'Frankenstein\`s Monster',
+        'a video game hero',
+        'Sherlock Holmes',
+        'a hard-boiled detective',
+        'James Bond',
+        'King Henry XIII',
+        'Queen Elizabeth',
+        'Hamlet (but don\'t draw him holding a skull, that\'s cheating)',
+        'Romeo and Juliet',
+        'Beethoven',
+        'Indiana Jones',
+        'Tintin',
+        'Scrooge',
+        'Santa Claus',
+        'The Easter Bunny',
+        'The tooth fairy',
+        'the Scarecrow (Wizard of Oz or Batman, either is fine)',
+        'the Cowardly Lion',
+        'the Tin Man',
+        'Davey Jones',
+        'Captain Redbeard',
+        'Merlin',
+        'Joan of Arc',
+        'Adam and Eve',
+        'Calamity Jane',
+        'The Wicked Witch',
+        'The Good Witch',
+        'Rapunzel',
+        'Cinderella',
+        'Satan',
+        'God',
+        'Salvador Dali',
+        ];
+
+    let redraw_character = function () {
+        return 'Draw your version of '+get_random(existing_characters)+'.'
+    };
+
+    let furry = function () {
+        return 'Draw '+get_random(existing_characters)+' as an animal character.'
+    };
+
+    let lettering = function () {
+        let choices = [
+            'a cereal box',
+            'a magazine ad',
+            'a street sign',
+            'office signage',
+            'graffiti',
+            'someone else\'s handwriting',
+            'someone else\'s comic',
+            'a book title',
+            'a can label',
+            'a corporate logo',
+            'an old-fashioned advertisement',
+            'a 90s video game box',
+        ];
+        return "Reproduce the lettering treatment of "+get_random(choices)
+    };
+
+    let minimalism = function () {
+        let choices = [
+            'a lawyer\'s office',
+            'a bicycle',
+            'an aircraft carrier',
+            'a garden',
+            'a supermarket',
+            'the lunar lander',
+            'a car carrier truck',
+            'a battleship',
+            'an Easter basket',
+            'an old-fashioned computer',
+            'a post office',
+            'Greek ruins',
+            'Maya or Aztec ruins',
+            'an operating room',
+            'a car engine',
+            'a helicopter',
+            'a rusty old jalopy',
+            'a circus',
+            'three specific types of clouds',
+            'ocean water in different amounts of choppiness',
+            'a grand piano',
+            'a tuba',
+            'a violin',
+            'an aquarium',
+            'a family on vacation',
+            'an enormous pile of garbage'
+        ];
+        return "Using as few details as possible (think Ed Emberley), draw "+get_random(choices)
+    };
+
+
+    let get_random = function (list) {
+        return list[Math.floor(Math.random()*list.length)]
+    };
+
+    let function_array = [
+        loathed, settings, macro, costume, caricatures,
+        miscellaneous,
+        redraw_character, furry,
+        lettering, minimalism];
+
+    let random_function = function () {
+        let which_function = Math.floor(Math.random()*function_array.length);
+        output.innerHTML = function_array[which_function]();
+    };
+</script>
