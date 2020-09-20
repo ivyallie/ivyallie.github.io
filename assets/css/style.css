@@ -478,7 +478,22 @@ li {
     margin-bottom: 10pt;
 }
 
+section.post_listing {
+    margin-bottom: 60pt;
+}
 
+section.post_listing h2 a {
+    text-decoration: none;
+}
+
+section.post_listing h2 {
+    text-align: center;
+}
+
+
+section.post_listing p.datestamp {
+    text-align: center;
+}
 
 @media screen and (min-width: 1050px) {
     #content {
