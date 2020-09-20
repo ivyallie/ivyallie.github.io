@@ -2,7 +2,7 @@
 title: Calvin and Hobbes Sunday Layouts
 description: Some isolated layouts from Calvin and Hobbes
 layout: post
-tags: [Calvin and Hobbes, Bill Watterson]
+tags: [Calvin and Hobbes, Bill Watterson, frontpage]
 ---
 Here are a few selected layouts from Bill Watterson's <em>Calvin and Hobbes</em> Sundays, isolated from
 their content for study purposes. Might be fun to print them out and see what you can come up with to fit these

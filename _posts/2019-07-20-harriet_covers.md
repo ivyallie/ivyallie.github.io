@@ -3,7 +3,7 @@ supertitle: A Cavalcade of Covers
 title: Harriet the Spy
 description: Harriet is a good spy because she has the perfect cover!
 layout: post
-categories: [cavalcade]
+categories: [cavalcade, frontpage]
 tags: [Louise Fitzhugh, Harriet the Spy]
 ---
 
