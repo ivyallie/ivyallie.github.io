@@ -129,3 +129,11 @@ body {
     border-color: #d88026;
     color: #d88026;
 }
+
+#comics_grid .comic_cell:hover {
+    border-color:#d88026;
+}
+
+#comics_grid .comic_cell:hover h2 {
+    color:#d88026;
+}
