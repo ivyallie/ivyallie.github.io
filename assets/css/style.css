@@ -62,6 +62,12 @@ h1:first-of-type {
     text-decoration:none;
 }
 
+h1.mini {
+    cursor: pointer;
+    margin: 5pt 15pt;
+    font-size: 15pt;
+}
+
 li h3 {
     font-size:1em;
 }
@@ -70,6 +76,10 @@ li h3 {
 
 #content {
     margin: 2em 2em 5em 2em;
+}
+
+#content_noheader {
+        margin: 0 2em 5em 2em;
 }
 
 figure {
@@ -164,6 +174,8 @@ blockquote {
 #footer {
     text-align:center;
     padding:2em;
+    background-image:url("/assets/template_images/clouds.jpg");
+    background-size: 100%;
 }
 
 #footer p {
@@ -400,6 +412,11 @@ li {
     font-family: 'Yatra One', sans-serif;
 }
 
+#nav-overlay li.button {
+    cursor: pointer;
+    font-size:15pt;
+}
+
 #nav-overlay a {
     text-decoration:none;
     color:#fff;
@@ -493,6 +510,29 @@ section.post_listing h2 {
 
 section.post_listing p.datestamp {
     text-align: center;
+}
+
+#page_display {
+    margin:auto;
+    display: block;
+    cursor: pointer;
+}
+
+#comic_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:5pt;
+}
+
+#comic_navigation button {
+    cursor: pointer;
+    border: 1px solid;
+    font-family: 'Yatra One', sans-serif;
+    background: none;
+    font-size:16pt;
+    border-radius:5pt;
+    outline:none;
 }
 
 @media screen and (min-width: 1050px) {

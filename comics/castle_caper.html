@@ -1,0 +1,151 @@
+---
+title: The Castle Caper
+supertitle: Monty the Mummy and
+layout: no_header
+permalink: /comics/castlecaper/
+---
+<div>
+             <img src="" id="page_display" onclick="nextPage()" style="max-width:50%" />
+    <img src="" id="next_page" style="display: none;"/>
+    <div id="comic_navigation">
+        <button type="button" id="back-button" onclick="previousPage()">Back</button>
+        <div>
+            <button type="button" onclick="zoom('in')">+</button>
+        <button type="button" onclick="zoom('out')">-</button>
+        </div>
+
+        <button type="button" id="next-button" onclick="nextPage()" >Next</button>
+    </div>
+</div>
+
+    <script>
+    let image_list = ['comics/images/castle_caper/cover.gif',
+'comics/images/castle_caper/page01.gif',
+'comics/images/castle_caper/page02.gif',
+'comics/images/castle_caper/page03.gif',
+'comics/images/castle_caper/page04.gif',
+'comics/images/castle_caper/page05.gif',
+'comics/images/castle_caper/page06.gif',
+'comics/images/castle_caper/page07.gif',
+'comics/images/castle_caper/page08.gif',
+'comics/images/castle_caper/page09.gif',
+'comics/images/castle_caper/page10.gif',
+'comics/images/castle_caper/page11.gif',
+'comics/images/castle_caper/page12.gif',
+'comics/images/castle_caper/page13.gif',
+'comics/images/castle_caper/page14.gif',
+'comics/images/castle_caper/page15.gif',
+'comics/images/castle_caper/page16.gif',
+'comics/images/castle_caper/page17.gif',
+'comics/images/castle_caper/page18.gif',
+'comics/images/castle_caper/page19.gif',
+'comics/images/castle_caper/page20.gif',
+'comics/images/castle_caper/page21.gif',
+'comics/images/castle_caper/page22.gif',
+'comics/images/castle_caper/page23.gif',
+'comics/images/castle_caper/page24.gif',
+'comics/images/castle_caper/page25.gif',
+'comics/images/castle_caper/page26.gif',
+'comics/images/castle_caper/page27.gif',
+'comics/images/castle_caper/page28.gif',
+'comics/images/castle_caper/reverse_cover.gif',
+]
+;
+    let page_display = document.getElementById('page_display');
+    let next_page = document.getElementById('next_page');
+    let next_button = document.getElementById('next-button');
+    let previous_button = document.getElementById('back-button');
+
+    let zoom = function(direction) {
+        let zoomlevel = parseInt(page_display.style.maxWidth) ;
+        if (direction==='in') {
+            let zoom = zoomlevel + 10;
+            if (zoom<101) {
+                page_display.style.maxWidth= zoom.toString()+'%';
+            }
+        }
+        else {
+            let zoom = zoomlevel - 10;
+            if (zoom>0) {
+                page_display.style.maxWidth = zoom.toString()+'%';
+            }
+        }
+    };
+
+    let showPage = function(page) {
+        let file = image_list[page];
+        let next_page_number = parseInt(page)+1;
+        if (!(next_page_number>=image_list.length)) {
+            let next_file = image_list[next_page_number];
+            next_page.setAttribute('src', '/' + next_file);
+        }
+        page_display.setAttribute('src', '/'+file);
+        setControlContext(page);
+    };
+
+    let getPageFromURL = function () {
+        let url = window.location.search;
+        let url_parameters = new URLSearchParams(url);
+        let page = parseInt(url_parameters.get('page')) ;
+        if (page>0) {
+            return page
+        } else {
+            return 0
+        }
+    };
+
+    let nextPage = function() {
+      let current_page = getPageFromURL();
+      if ((current_page+1)<image_list.length) {
+          showPage(current_page+1);
+          let url = new URL(window.location);
+          url.searchParams.set('page',current_page+1);
+          window.history.pushState('','',url);
+      }
+    };
+
+    let previousPage = function() {
+        let current_page = getPageFromURL();
+        if ((current_page-1)>-1) {
+            showPage(current_page-1);
+            let url = new URL(window.location);
+            url.searchParams.set('page',current_page-1);
+            window.history.pushState('','',url);
+        }
+    };
+
+    let setControlContext = function(page) {
+        let highest_index = image_list.length - 1;
+        if (page === highest_index) {
+        next_button.disabled = true;
+        previous_button.disabled = false;
+        page_display.classList.remove('interact');
+        } else if ((0 < page) && (page < highest_index)) {
+            next_button.disabled = false;
+            previous_button.disabled = false;
+            page_display.classList.add('interact');
+        } else if (page === 0) {
+            next_button.disabled = false;
+            previous_button.disabled = true;
+            page_display.classList.add('interact');
+        }
+    };
+
+    let initialize = function() {
+        let page = getPageFromURL();
+        showPage(page)
+    };
+
+
+    window.onload = function() {
+        initialize();
+    };
+
+    window.addEventListener('popstate', function() {
+        //fetch correct comic when reached by back/forward browser navigation
+        let page=getPageFromURL();
+        showPage(page);
+    })
+
+
+    </script>

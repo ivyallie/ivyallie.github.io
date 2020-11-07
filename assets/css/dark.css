@@ -23,6 +23,14 @@ h1,h2,h3,h4 {
     color:#d88026;
 }
 
+h1.mini {
+    color:#966330;
+}
+
+h1.mini:hover {
+    color:#d88026;
+}
+
 figcaption {
     color:#aaa;
     border-color:#333;
@@ -108,6 +116,16 @@ body {
     color:#d88026;
 }
 
-#close-overlay:hover {
+#nav-overlay li.button:hover {
     color:#d88026;
+}
+
+#comic_navigation button {
+    border-color: #966330;
+    color: #966330;
+}
+
+#comic_navigation button:hover {
+    border-color: #d88026;
+    color: #d88026;
 }
