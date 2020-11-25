@@ -556,6 +556,26 @@ section.post_listing p.datestamp {
     margin:0;
 }
 
+.picture_matrix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picture_matrix li {
+    max-width:300pt;
+    list-style: none;
+    padding:10pt;
+}
+
+.picture_matrix li h2 {
+    margin:0;
+}
+
+.picture_matrix li span {
+    font-style: italic;
+}
+
 #content .comic_cell img {
     margin:0;
 }
