@@ -1,14 +1,23 @@
 <div id="topbar">
     <div>
-        <h1><a href="/">Ivy Allie</a></h1>
+        <h1>
+            {% if page.dev %}
+                <a href="/dev/">Ivy Allie</a></h1>
+            {% else %}
+                <a href="/new/">Ivy Allie</a></h1>
+            {% endif %}
         <div>
             <nav class="disposable">
                 <ul>
-                    <li><a href="/words">Words</a></li>
-                    <li><a href="/pictures">Pictures</a></li>
+                    {% if page.dev %}
+                        <li><a href="/dev">Projects</a></li>
+                        <li><a href="/resume">Resum&eacute;</a></li>
+                    {% else %}
+                    <li><a href="/about/">About</a></li>
                     <li><a href="/comics">Comics</a></li>
-                    <li><a href="/dev">Dev</a></li>
-                    <li><a href="/resume">Resum&eacute;</a></li>
+                    <li><a href="/words">Writing</a></li>
+                    <li><a href="/pictures">Artwork</a></li>
+                    {% endif %}
                 </ul>
             </nav>
             <button class="navbutton" onclick="modebutton()">

@@ -17,4 +17,8 @@
   </head>
   <body>
       {% include overlay.html %}
-    {% include topbar.html %}
+      {% if page.landing %}
+        {% include alt_topbar.html %}
+      {% else %}
+        {% include topbar.html %}
+      {% endif %}

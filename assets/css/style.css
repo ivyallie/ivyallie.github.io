@@ -62,6 +62,35 @@ h1:first-of-type {
     text-decoration:none;
 }
 
+#alt_topbar nav ul li {
+    display:inline-block;
+    margin:0;
+}
+
+#alt_topbar nav ul li a {
+    margin:0 .25em;
+    text-decoration: none;
+    text-transform: uppercase;
+        font-family:'Yatra One', sans-serif;
+    padding:.1em .35em;
+    border-radius:.25em;
+}
+
+#alt_topbar nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding:10pt;
+}
+
+#alt_topbar h1 {
+    font-size: 24pt;
+    text-align: center;
+}
+
+#alt_topbar {
+    padding-top:10pt;
+}
+
 h1.mini {
     cursor: pointer;
     margin: 5pt 15pt;
@@ -586,6 +615,21 @@ section.post_listing p.datestamp {
 
 #comics_grid .comic_cell:hover {
     border:1px solid;
+}
+
+#landing_image {
+    flex:1;
+    object-fit: cover;
+}
+
+#landing_image_frame {
+    display: flex;
+    flex-direction: column;
+}
+
+.switch a {
+    font-size:10pt;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1050px) {

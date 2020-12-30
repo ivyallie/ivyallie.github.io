@@ -6,16 +6,16 @@ h1,h2,h3,h4 {
         background-color: #111;
 }
 
-#topbar nav li a {
+#topbar nav li a, #alt_topbar nav li a {
     color:#999;
 }
 
-#topbar nav li a:hover {
+#topbar nav li a:hover, #alt_topbar nav li a:hover {
     background-color:#966330;
     color:white;
 }
 
-#topbar h1 a {
+#topbar h1 a, #alt_topbar h1 {
     color:#966330;
 }
 
