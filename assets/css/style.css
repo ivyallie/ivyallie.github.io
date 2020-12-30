@@ -675,4 +675,9 @@ section.post_listing p.datestamp {
         display: inline;
         margin-left:2em;
     }
+
+    #alt_topbar nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
