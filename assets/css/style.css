@@ -39,7 +39,7 @@ h1:first-of-type {
     display: inline;
 }
 
-#topbar nav li a {
+nav li a  {
     margin:0 .25em;
     text-decoration: none;
     text-transform: uppercase;
@@ -625,6 +625,27 @@ section.post_listing p.datestamp {
 #landing_image_frame {
     display: flex;
     flex-direction: column;
+}
+
+nav#portfolio {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding:1em .25em;
+    box-shadow:  0 0 10px rgb(0 0 0 / 30%)
+}
+
+nav#portfolio ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav#portfolio li {
+    display: inline-block;
+    font-family: 'Yatra One', sans-serif;
+    text-transform: uppercase;
 }
 
 .switch a {

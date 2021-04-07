@@ -6,11 +6,11 @@ h1,h2,h3,h4 {
         background-color: #fff;
 }
 
-#topbar nav li a, #alt_topbar nav li a {
+nav li a {
     color:#999;
 }
 
-#topbar nav li a:hover, #alt_topbar nav li a:hover {
+nav li a:hover {
     background-color:#277fd9;
     color:white;
 }
@@ -130,4 +130,8 @@ a {
 
 #comics_grid .comic_cell:hover h2 {
     color:#3ea2ff;
+}
+
+nav#portfolio {
+    background-color: white;
 }
