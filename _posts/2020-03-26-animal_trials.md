@@ -5,6 +5,6 @@ layout: post
 tags: [animal trials, comic]
 categories: [frontpage]
 ---
-My new comic about the strange history of "animal trials" is now available! Click the image below to read the whole thing, or click <a href="/comics/animal-trials">here.</a>
+My new comic about the strange history of "animal trials" is now available! Click the image below to read the whole thing, or click <a href="/comics/animal_trials">here.</a>
 
 <a href="/comics/animal_trials"><img src="/comics/images/animal_trials/preview.gif" alt="Animal Trials"/></a>
