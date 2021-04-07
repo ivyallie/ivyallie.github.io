@@ -339,7 +339,7 @@ li {
     height:100%;
 }
 
-#content .portfolio_single img {
+#content .portfolio_single img, .portfolio_single img {
     max-width:100%;
     max-height:calc(100vh - 7em);
     margin:1em auto;
