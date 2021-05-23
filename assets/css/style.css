@@ -653,6 +653,14 @@ nav#portfolio li {
     text-transform: uppercase;
 }
 
+.comic_gallery_copy {
+    padding:1em;
+}
+
+.comic_gallery_copy p {
+    margin: 1em 0;
+}
+
 @media screen and (min-width: 1050px) {
     #content {
         max-width:1000px;

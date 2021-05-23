@@ -1,19 +1,169 @@
 ---
 title: Sanity Check 1
 supertitle: Comics
-layout: default
+layout: no_header
 permalink: /comics/sanitycheck1/
 description: The first issue of Ivy Allie's personal comics magazine
 ---
+
+
+<div>
+             <img src="" id="page_display" onclick="nextPage()" style="max-width:50%" />
+    <img src="" id="next_page" style="display: none;"/>
+    <div id="comic_navigation">
+        <button type="button" id="back-button" onclick="previousPage()">Back</button>
+        <div>
+            <button type="button" onclick="zoom('in')">+</button>
+        <button type="button" onclick="zoom('out')">-</button>
+        </div>
+
+        <button type="button" id="next-button" onclick="nextPage()" >Next</button>
+    </div>
+</div>
+
+    <script>
+    let image_list = [
+        'SanityCheck_1_00.jpg',
+        'SanityCheck_1_01.jpg',
+        'SanityCheck_1_02.jpg',
+        'SanityCheck_1_03.jpg',
+        'SanityCheck_1_04.jpg',
+        'SanityCheck_1_05.jpg',
+        'SanityCheck_1_06.jpg',
+        'SanityCheck_1_07.jpg',
+        'SanityCheck_1_08.jpg',
+        'SanityCheck_1_09.jpg',
+        'SanityCheck_1_10.jpg',
+        'SanityCheck_1_11.jpg',
+        'SanityCheck_1_12.jpg',
+        'SanityCheck_1_13.jpg',
+        'SanityCheck_1_14.jpg',
+        'SanityCheck_1_15.jpg',
+        'SanityCheck_1_16.jpg',
+        'SanityCheck_1_17.jpg',
+        'SanityCheck_1_18.jpg',
+        'SanityCheck_1_19.jpg',
+        'SanityCheck_1_20.jpg',
+        'SanityCheck_1_21.jpg',
+        'SanityCheck_1_22.jpg',
+        'SanityCheck_1_23.jpg',
+        'SanityCheck_1_24.jpg',
+        'SanityCheck_1_25.jpg',
+        'SanityCheck_1_26.jpg',
+        'SanityCheck_1_27.jpg',
+        'SanityCheck_1_28.jpg',
+        'SanityCheck_1_29.jpg',
+        'SanityCheck_1_30.jpg',
+        'SanityCheck_1_31.jpg',
+
+
+    ];
+    let page_display = document.getElementById('page_display');
+    let next_page = document.getElementById('next_page');
+    let next_button = document.getElementById('next-button');
+    let previous_button = document.getElementById('back-button');
+    let path = '/comics/images/sanitycheck1/';
+
+    let zoom = function(direction) {
+        let zoomlevel = parseInt(page_display.style.maxWidth) ;
+        if (direction==='in') {
+            let zoom = zoomlevel + 10;
+            if (zoom<101) {
+                page_display.style.maxWidth= zoom.toString()+'%';
+            }
+        }
+        else {
+            let zoom = zoomlevel - 10;
+            if (zoom>0) {
+                page_display.style.maxWidth = zoom.toString()+'%';
+            }
+        }
+    };
+
+    let showPage = function(page) {
+        let file = image_list[page];
+        let next_page_number = parseInt(page)+1;
+        if (!(next_page_number>=image_list.length)) {
+            let next_file = image_list[next_page_number];
+            next_page.setAttribute('src', path + next_file);
+        }
+        page_display.setAttribute('src', path+file);
+        setControlContext(page);
+    };
+
+    let getPageFromURL = function () {
+        let url = window.location.search;
+        let url_parameters = new URLSearchParams(url);
+        let page = parseInt(url_parameters.get('page')) ;
+        if (page>0) {
+            return page
+        } else {
+            return 0
+        }
+    };
+
+    let nextPage = function() {
+      let current_page = getPageFromURL();
+      if ((current_page+1)<image_list.length) {
+          showPage(current_page+1);
+          let url = new URL(window.location);
+          url.searchParams.set('page',current_page+1);
+          window.history.pushState('','',url);
+      }
+    };
+
+    let previousPage = function() {
+        let current_page = getPageFromURL();
+        if ((current_page-1)>-1) {
+            showPage(current_page-1);
+            let url = new URL(window.location);
+            url.searchParams.set('page',current_page-1);
+            window.history.pushState('','',url);
+        }
+    };
+
+    let setControlContext = function(page) {
+        let highest_index = image_list.length - 1;
+        if (page === highest_index) {
+        next_button.disabled = true;
+        previous_button.disabled = false;
+        page_display.classList.remove('interact');
+        } else if ((0 < page) && (page < highest_index)) {
+            next_button.disabled = false;
+            previous_button.disabled = false;
+            page_display.classList.add('interact');
+        } else if (page === 0) {
+            next_button.disabled = false;
+            previous_button.disabled = true;
+            page_display.classList.add('interact');
+        }
+    };
+
+    let initialize = function() {
+        let page = getPageFromURL();
+        showPage(page)
+    };
+
+
+    window.onload = function() {
+        initialize();
+    };
+
+    window.addEventListener('popstate', function() {
+        //fetch correct comic when reached by back/forward browser navigation
+        let page=getPageFromURL();
+        showPage(page);
+    })
+
+
+    </script>
+<div class="comic_gallery_copy">
 <p>The debut issue of what will hopefully become an ongoing publication, <em>Sanity Check 1</em> includes
 two original short stories in over 25 pages of comics, plus a variety of bonus material. The first story,
 "Of Course, No One Knew", is about the memory of a distant summer dredged up by a DVD commentary. The second
 story, "The Situation," is about a toad exterminator in suburban Florida who's faced with an ethical predicament.</p>
-<p>As of this writing, the comics are not available for free yet, but they can be obtained for as little as $8
-    via <a href="https://gum.co/WShNi">Gumroad</a>. Profits benefit the ACLU Foundation.</p>
-<p>Or you can wait and eventually I'll probably post it for free. In the meantime, have some previews:</p>
-<img src="/comics/images/sanitycheck1/sc_preview_cover.jpg" alt="Sanity Check 1 cover"/>
-<img src="/comics/images/sanitycheck1/sc_preview.jpg" alt="The Situation"/>
-<img src="/comics/images/sanitycheck1/sc_preview02.jpg" alt="Of Course, No One Knew"/>
+    <p>Print and PDF copies are available for as little as $8, via <a href="https://gum.co/WShNi">Gumroad</a>. Profits benefit the ACLU Foundation.</p>
+
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://gum.co/WShNi">Buy Sanity Check 1</a>
+    </div>
