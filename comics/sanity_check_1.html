@@ -6,24 +6,7 @@ permalink: /comics/sanitycheck1/
 description: The first issue of Ivy Allie's personal comics magazine
 ---
 
-
-<div>
-             <img src="" id="page_display" onclick="nextPage()" style="max-width:50%" />
-    <img src="" id="next_page" style="display: none;"/>
-    <div id="comic_navigation">
-        <button type="button" id="back-button" onclick="previousPage()">Back</button>
-        <div>
-            <button type="button" onclick="zoom('in')">+</button>
-        <button type="button" onclick="zoom('out')">-</button>
-        </div>
-
-        <button type="button" id="next-button" onclick="nextPage()" >Next</button>
-    </div>
-</div>
-
-    <script>
-    let image_list = [
-        'SanityCheck_1_00.jpg',
+{% include comic_display_script.html list="'SanityCheck_1_00.jpg',
         'SanityCheck_1_01.jpg',
         'SanityCheck_1_02.jpg',
         'SanityCheck_1_03.jpg',
@@ -54,116 +37,25 @@ description: The first issue of Ivy Allie's personal comics magazine
         'SanityCheck_1_28.jpg',
         'SanityCheck_1_29.jpg',
         'SanityCheck_1_30.jpg',
-        'SanityCheck_1_31.jpg',
+        'SanityCheck_1_31.jpg'"
+
+path='/comics/images/sanitycheck1/'
+
+%}
 
 
-    ];
-    let page_display = document.getElementById('page_display');
-    let next_page = document.getElementById('next_page');
-    let next_button = document.getElementById('next-button');
-    let previous_button = document.getElementById('back-button');
-    let path = '/comics/images/sanitycheck1/';
 
-    let zoom = function(direction) {
-        let zoomlevel = parseInt(page_display.style.maxWidth) ;
-        if (direction==='in') {
-            let zoom = zoomlevel + 10;
-            if (zoom<101) {
-                page_display.style.maxWidth= zoom.toString()+'%';
-            }
-        }
-        else {
-            let zoom = zoomlevel - 10;
-            if (zoom>0) {
-                page_display.style.maxWidth = zoom.toString()+'%';
-            }
-        }
-    };
-
-    let showPage = function(page) {
-        let file = image_list[page];
-        let next_page_number = parseInt(page)+1;
-        if (!(next_page_number>=image_list.length)) {
-            let next_file = image_list[next_page_number];
-            next_page.setAttribute('src', path + next_file);
-        }
-        page_display.setAttribute('src', path+file);
-        setControlContext(page);
-    };
-
-    let getPageFromURL = function () {
-        let url = window.location.search;
-        let url_parameters = new URLSearchParams(url);
-        let page = parseInt(url_parameters.get('page')) ;
-        if (page>0) {
-            return page
-        } else {
-            return 0
-        }
-    };
-
-    let nextPage = function() {
-      let current_page = getPageFromURL();
-      if ((current_page+1)<image_list.length) {
-          showPage(current_page+1);
-          let url = new URL(window.location);
-          url.searchParams.set('page',current_page+1);
-          window.history.pushState('','',url);
-      }
-    };
-
-    let previousPage = function() {
-        let current_page = getPageFromURL();
-        if ((current_page-1)>-1) {
-            showPage(current_page-1);
-            let url = new URL(window.location);
-            url.searchParams.set('page',current_page-1);
-            window.history.pushState('','',url);
-        }
-    };
-
-    let setControlContext = function(page) {
-        let highest_index = image_list.length - 1;
-        if (page === highest_index) {
-        next_button.disabled = true;
-        previous_button.disabled = false;
-        page_display.classList.remove('interact');
-        } else if ((0 < page) && (page < highest_index)) {
-            next_button.disabled = false;
-            previous_button.disabled = false;
-            page_display.classList.add('interact');
-        } else if (page === 0) {
-            next_button.disabled = false;
-            previous_button.disabled = true;
-            page_display.classList.add('interact');
-        }
-    };
-
-    let initialize = function() {
-        let page = getPageFromURL();
-        showPage(page)
-    };
-
-
-    window.onload = function() {
-        initialize();
-    };
-
-    window.addEventListener('popstate', function() {
-        //fetch correct comic when reached by back/forward browser navigation
-        let page=getPageFromURL();
-        showPage(page);
-    })
-
-
-    </script>
 <div class="comic_gallery_copy">
-<p>The debut issue of what will hopefully become an ongoing publication, <em>Sanity Check 1</em> includes
-two original short stories in over 25 pages of comics, plus a variety of bonus material. The first story,
-"Of Course, No One Knew", is about the memory of a distant summer dredged up by a DVD commentary. The second
-story, "The Situation," is about a toad exterminator in suburban Florida who's faced with an ethical predicament.</p>
-    <p>Print and PDF copies are available for as little as $8, via <a href="https://gum.co/WShNi">Gumroad</a>. Profits benefit the ACLU Foundation.</p>
+    <p>The debut issue of what will hopefully become an ongoing publication, <em>Sanity Check 1</em> includes
+        two original short stories in over 25 pages of comics, plus a variety of <a href="./?page=14">bonus material</a>.
+        The first story,
+        <a href="./?page=2">"Of Course, No One Knew"</a>, is about the memory of a distant summer dredged up by a DVD
+        commentary. The second
+        story, <a href="./?page=18">"The Situation"</a>, is about a toad exterminator in suburban Florida who's faced with an ethical
+        predicament.</p>
+    <p>Print and PDF copies are available for as little as $8, via <a href="https://gum.co/WShNi">Gumroad</a>. Profits
+        benefit the ACLU Foundation.</p>
 
-<script src="https://gumroad.com/js/gumroad.js"></script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://gum.co/WShNi">Buy Sanity Check 1</a>
     </div>
