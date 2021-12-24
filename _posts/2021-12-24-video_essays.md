@@ -44,12 +44,6 @@ essay require even further exploration.
 - [Nostalgia Critic Reviews AREN'T Reviews](https://www.youtube.com/watch?v=lUz2f-A9Oqw&t=0s) by Bright Side Euan. In which Doug attempts film criticism,
 and creates a legacy of bad film criticism in his wake.
 
-- [The Existential Horror of Nostalgia Critic and Bad Faith Criticism](https://www.youtube.com/watch?v=c-zwW8zFDo0&t=982s) by Cheyenne Lin. In which Doug; I
-can't actually remember what's in this one but for the sake of completeness I'm including it. It was probably good, Doug content usually is unless he's the one making it.
-
-- [I Watched All of Nostalgia Critic's Awful Films So You Don't Have To](https://www.youtube.com/watch?v=Yt9dpW9vqdk) by Pinely. In which Doug makes the worst
-film of all time. As a trilogy. That's three worst films of all time.
-
 
 ## Video games
 - [Exposing Fraud and Deception in the Retro Video Game Market](https://youtu.be/rvLFEh7V18A) by Karl Jobst. An infuriating and thorough 
