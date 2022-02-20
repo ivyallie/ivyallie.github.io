@@ -27,6 +27,8 @@ A composite cover that includes three illustrations from inside the book. It's O
 
 **Rating: 5/10**
 
+<!--more-->
+
 ![Harriet the Spy, featuring cats](/assets/images/blog/harriet/cats.jpg)
 
 Here's an odd cover from the seventies, created by someone who clearly just wanted to draw some cats. Well, at least they're cute cats!

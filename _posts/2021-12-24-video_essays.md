@@ -2,7 +2,7 @@
 title: The Best Video Essays of 2021
 description: My personal roundup of YouTube's finest
 layout: post
-categories: [frontpage]
+categories: [frontpage,internet]
 ---
 Possibly the most fascinating and vivid new art form of our time, nearly
 everyone I know under the age of 40 watches video essays on at least a 
@@ -74,7 +74,7 @@ a lot of the backstory nuance that is explained in this video. And you probably 
 - [The Hidden Game Within Microsoft Flight Simulator](https://www.youtube.com/watch?v=ulVfzB2tiMU) by Writing on Games. 
 The strange beauty of playing MS Flight Sim wrong.
 
-
+<!--more-->
 
 
 
@@ -99,9 +99,13 @@ once made its own branded game show? They did! And here is more information abou
 - The "Reality TV Chronicles" by We're in Hell. A rich and surprising exploration of the context and subtexts of some of recent memory's weirdest reality shows.
 
     - [Why Are Cooking Shows?](https://www.youtube.com/watch?v=9i3zKU8Q6ZI)
+    
     - [An Inexplicably Deep Dive into Blown Away](https://www.youtube.com/watch?v=a6LtuLDCQrQ&t=2297s) "A Reality Show About Art"
+    
     - [Stay Here: Gentrification and the Neoliberal City](https://www.youtube.com/watch?v=WycFnXXj6h0&t=2845s)
+    
     - [Too Hot to Handle & Surveillance Capitalism](https://www.youtube.com/watch?v=FGDhUDgfF6E&t=4510s)
+    
     
     
 - [Hollywood's (Gay) China Problem](https://www.youtube.com/watch?v=zIsQ502N0fg) by James Somerton. A not-uncommon complaint: 
@@ -124,9 +128,13 @@ from my list it's that Broey Deschanel is probably the best video essayist writi
 
 - The "Saurian Cinema" series by coldcrashpictures. A great series presenting various perspectives on dinosaur movies. 
 Not dissimilar to Lindsay Ellis's _Transformers_ series from several years ago. The first two technically came out in 2020, but who's counting.
+
     - [Gender and Jurassic Park](https://www.youtube.com/watch?v=5hCuv16pzjs)
+    
     - [Colonialism and The Lost World](https://www.youtube.com/watch?v=lyczktZVbzA)
+    
     - [Learning From Bad Dinosaur Films](https://www.youtube.com/watch?v=G6aFkZMMQ-M) 
+    
     
 - [The bizarre world of fan edits and restorations](https://www.youtube.com/watch?v=DkuIHWJmqUg) by The Royal Ocean Film Society. _The Phantom Menace_
 without Jar-Jar Binks and _The Thief and the Cobbler_ are just the beginning.
@@ -136,7 +144,6 @@ topic in video essaying this year, wasn't it? This one is specifically about how
 
 - [Capitalism, Poverty, and Ratatouille](https://www.youtube.com/watch?v=EC2gRvG1RlI) by The Sin Squad. All about _Ratatouille_'s strange obsession
 with theft as the ultimate crime. Technically came out before 2021, but only by a day so I'll allow it.
-
 
 #### The Sia Saga
 The most fascinating and horrifying event in 2021 cinema was the release of the ill-advised autism film "Music", created by ostensibly famous
@@ -160,6 +167,9 @@ packed an entire 3D game into 96KB.
 - [The Typographic Legacy of Microsoft](https://www.youtube.com/watch?v=LndgfGjGImw) by Linus Boman. From Arial and Georgia to Trebuchet and Comic Sans,
 Microsoft's typography has become as pervasive as plastic in today's world. This is a great overview of the typefaces Microsoft has created and their outsize
 influence on graphic design.
+
+- [Bliss - The Story of Windows XP's Famous Default Wallpaper](https://www.youtube.com/watch?v=N_rildi0Izs) by Michael MJD. A surprisingly
+touching and heartfelt homage to the history and legacy of the green hills that appeared in (arguably) the most famous photograph of all time.
 
 ## Miscellaneous
 

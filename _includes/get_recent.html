@@ -3,7 +3,8 @@
 {% if post.supertitle %}
     {{post.supertitle}}&colon; 
     {% endif %}
-{{ post.title }}</a>
+    {{ post.title }}</a> &backsim; <span class="datestamp">{{ post.date | date_to_string }}</span>
+
 {% if post.description %}
     <br>{{ post.description }}
     {% endif %}

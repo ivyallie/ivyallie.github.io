@@ -1,10 +1,10 @@
 ---
-title: Words
+title: Writing
 permalink: /words/
 layout: default
 description: Essays and other writing by Ivy Allie
 ---
-<p>Bits and pieces of writing.</p>
+
 <div class="columnar">
     <div>
         <h2>About films</h2>
@@ -39,6 +39,11 @@ description: Essays and other writing by Ivy Allie
             {% include get_posts.html %}
             {% endfor %}
         </ul>
+
+        <h2>About internet culture</h2>
+        {% for post in site.categories.internet %}
+            {% include get_posts.html %}
+            {% endfor %}
     </div>
     <div>
         <h2>About books</h2>

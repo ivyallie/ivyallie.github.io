@@ -2,8 +2,30 @@
     margin:0;
 }
 
+@font-face {
+    font-family: 'Alegreya';
+    src: url("/assets/fonts/Alegreya-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url("/assets/fonts/Alegreya-Italic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url("/assets/fonts/Alegreya-Bold.otf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Yatra One';
+    src: url("/assets/fonts/YatraOne-Regular.ttf");
+}
+
 html, body {
-       font-family:'Alegreya', serif;
+       font-family: 'Alegreya', serif;
 }
 
 h1,h2,h3,h4 {
@@ -662,6 +684,10 @@ nav#portfolio li {
 .comic_gallery_copy p {
     margin: 1em 0;
 }
+
+ul.front_page_recent a { font-weight: bold;}
+
+ul.front_page_recent span.datestamp {color:#555;}
 
 @media screen and (min-width: 1050px) {
     #content {

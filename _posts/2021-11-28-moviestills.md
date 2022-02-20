@@ -20,6 +20,8 @@ After two years of pandemic, I think we can all appreciate how important such wo
 
 [Donate now](https://www.paypal.com/paypalme/ivyallie)
 
+<!--more-->
+
 ## More examples
 Here's a black-and-white version of the _Alien_ drawing you saw already!
 ![Black and white illustration based on the film Alien](/assets/images/movie_fundraiser/alien_monochrome.png "&ldquo;Alien&rdquo; in black and white")

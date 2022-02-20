@@ -1,6 +1,37 @@
 ---
+layout: default
 title: Welcome
-layout: barebones
-landing: True
+hidetitle: true
 ---
-<div id="landing_image_frame"><img src="./assets/images/meredith_splash.jpg" id="landing_image" alt="Landing page illustration"/></div>
+
+<h2>What's good around here?</h2>
+<p>The best stuff is my <a href="/comics/">comics</a>; I'd start there. After that maybe check out some <a href="/words/">writing</a>
+or maybe my <a href="/pictures/">art portfolio</a>. There are also my <a href="/dev/">software dev</a> projects if you're into that kind of thing.
+But if you're only here for <a href="/calculator/">the Cartoonist's Calculator</a>, that's OK too :).</p>
+<div class="columnar">
+
+        <div class="no-indent">
+                <h2>The latest nonsense</h2>
+                <p>Here's what's new and exciting:</p>
+        <ul class="front_page_recent">
+            {% include get_recent.html %}
+        </ul>
+            <p>Perhaps you'd like to see this <a href="/blog/">displayed like a blog</a>?</p>
+
+
+    </div>
+    <div>
+        <h2>About</h2>
+        <img src="/assets/images/ivy_allie_portrait.jpg" alt="Ivy Allie"/>
+           <div class="no-indent">
+        <p>I'm Ivy! I'm a cartoonist and writer, currently living in Los Angeles.
+            I'm an alumna of the Center for Cartoon Studies class of 2021.</p>
+                       <p>Outside of my art I work professionally in computer graphics and software development.</p>
+
+        <p>I mostly keep off of social media but you can find me rambling about movies on <a href="https://letterboxd.com/ivyallie/">Letterboxd</a>
+            and also on <a href="https://www.instagram.com/ivylynnallie/">Instagram</a> if that's your thing.</p>
+
+    </div>
+    </div>
+
+</div>
