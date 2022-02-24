@@ -1,6 +1,7 @@
 ---
 title: Webmaster's Pledge
 layout: default
+permalink: /pledge/
 ---
 Much of the internet today is infested with pernicious JavaScript,
 most of it designed to serve advertising, harvest data about you,
