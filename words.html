@@ -11,8 +11,26 @@ description: Essays and other writing by Ivy Allie
         <ul>
 
             {% for post in site.categories.films %}
+
+                {% include get_posts.html %}
+
+            {% endfor %}
+            <li><h3>Star Wars conscientious objector</h3>
+                <ul>
+                    {% assign sorted_posts = site.categories.starwars | sort:"order" %}
+                            {% for post in sorted_posts %}
             {% include get_posts.html %}
             {% endfor %}
+                </ul>
+            </li>
+                        <li><h3>Alien vs. Ivy</h3>
+                <ul>
+                    {% assign sorted_posts = site.categories.alien | sort:"order" %}
+                            {% for post in sorted_posts %}
+            {% include get_posts.html %}
+            {% endfor %}
+                </ul>
+            </li>
             <li><a href="https://letterboxd.com/ivyallie/">More on Letterboxd &raquo;</a></li>
         </ul>
         <h2>About video games</h2>
@@ -33,19 +51,10 @@ description: Essays and other writing by Ivy Allie
             {% include get_posts.html %}
             {% endfor %}
            </ul>
-            <h2>About comics</h2>
-        <ul>
-            {% for post in site.categories.comics %}
-            {% include get_posts.html %}
-            {% endfor %}
-        </ul>
 
-        <h2>About internet culture</h2>
-        {% for post in site.categories.internet %}
-            {% include get_posts.html %}
-            {% endfor %}
     </div>
     <div>
+
         <h2>About books</h2>
         <ul>
             {% for post in site.categories.books %}
@@ -68,7 +77,17 @@ description: Essays and other writing by Ivy Allie
         </ul>
 
 
+        <h2>About comics</h2>
+        <ul>
+            {% for post in site.categories.comics %}
+            {% include get_posts.html %}
+            {% endfor %}
+        </ul>
 
+        <h2>About internet culture</h2>
+        {% for post in site.categories.internet %}
+            {% include get_posts.html %}
+            {% endfor %}
 
         
         <h2>Miscellaneous</h2>

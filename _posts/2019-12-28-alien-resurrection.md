@@ -1,0 +1,18 @@
+---
+listtitle: Alien Resurrection
+title: The descent continues
+subtitle: Alien vs. Ivy&#58; Alien Resurrection
+description: 
+layout: post
+order: 4
+categories: [alien]
+---
+<p>There&#39;s always been a weird erotic subtext in the <em>Alien</em> series. And if you&#39;re part of the subset of people who think Xenomorphs are sexy, this film is for you.</p>
+<p>For the rest of us, this film is a sad, unfortunate mess. I wouldn&#39;t go so far as to say that it&#39;s worse than <em>Alien 3</em>; they&#39;re about equal in my book. Which is to say they&#39;re both really bad.</p>
+<p>For starters, this film is completely incapable of sustaining any kind of atmosphere. Where <em>Alien</em> was often content to let its creepy corridors carry the story on their own for extended periods of time, <em>Resurrection</em> needs stuff to be happening constantly, even if it&#39;s only something stupid. </p>
+<p>And it usually is something stupid, because the people who made this film don&#39;t seem to understand science or narrative. While this series has never had a particularly grounded understanding of reality, this entry throws any kind of credibility out the window. This wouldn&#39;t be a big problem if these inaccuracies enabled some sort of interesting or enjoyable story beats, but generally they don&#39;t.  It&#39;s just made-up science that greases the wheels of a story that wasn&#39;t that good to begin with.</p>
+<p>This series started with Ripley escaping from the monster by her cunning and reticence, but that&#39;s all but gone in this film. Instead, we have a slasher film. The characters aren&#39;t solving problems so much as they&#39;re blundering around until getting picked off, usually in visceral, disgusting ways. The film doesn&#39;t even have the decency to make them worth caring about. Most of them are just a bunch of tedious knuckleheads whose physical appearances are their only differentiating trait. Rewriting this film to be about teenagers in a secluded cabin would be trivially easy. </p>
+<p>The things that this film can be commended for are usually just aspects that it does better than its immediate predecessor, which isn&#39;t really something to brag about. While the decision to remake Ripley as a cold-as-ice alien hybrid is rather tasteless, this film at least doesn&#39;t seem to hold the previous films in outright contempt. The visual effects are markedly improved, though perhaps not back to the standards of <em>Aliens</em>. The film is again fairly misogynistic (in particular it treats the female reproductive tract itself as a type of body horror), but less overtly so than <em>3</em>. It at least tempers the mistakes of the previous film, even if it doesn&#39;t go so far as to correct them. </p>
+<p>And it does have its moments. Brad Dourif, my all-time favorite creepy scenery-chewer, gets a prominent role and hams it up as only he can. The animatronics for the alien/human hybrid monster at the end are singularly impressive, and the subtlety of its performance actually managed to make me feel empathy for what is in reality an incredibly ugly piece of rubber. And pseudo-Ripley, though not a particularly good idea, is at least pretty badass. </p>
+<p>I had hoped these sequels would not be as bad as I&#39;d heard. A lot of good people worked on them: David Fincher, Jean-Pierre Jeunet, Joss Whedon, not to mention Sigourney Weaver... these are all names I generally respect. I thought perhaps these films would turn out to be flawed but actually pretty good in one way or another. But they&#39;re just not. They&#39;re bad films and there&#39;s no way around it. But will the return of Ridley Scott restore this series to its former glory? We&#39;ll soon find out!</p>
+<p>&nbsp;</p>
