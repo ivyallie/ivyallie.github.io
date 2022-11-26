@@ -1,6 +1,13 @@
 {% unless page.landing %}
 <div id="footer" data-image-src="/assets/template_images/clouds.jpg">
-    <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear())</script> by Ivy Lynn Allie.</p>
+    {% if page.license %}
+        <p>Content on this page is governed by {{ page.license }}</p>
+    <p>Site &copy; <script type="text/javascript">document.write((new Date()).getFullYear())</script> by Ivy Lynn Allie.</p>
+
+    {% else %}
+        <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear())</script> by Ivy Lynn Allie.</p>
+    {% endif %}
+
     <p>
         <script type="text/javascript" language="javascript">
 <!--

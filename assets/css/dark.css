@@ -32,7 +32,6 @@ h1.mini:hover {
 }
 
 figcaption {
-    color:#aaa;
     border-color:#333;
 }
 
@@ -45,7 +44,7 @@ body {
 }
 
 #content {
-    color:#eee;
+    color:#eee !important;
 }
 
 #content p.datestamp {

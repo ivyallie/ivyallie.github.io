@@ -1,0 +1,119 @@
+figcaption {
+    text-align: left;
+    font-size: 1.1em;
+    border-bottom: none;
+}
+
+#content figure img {
+    width: 100%;
+    max-width: 40em;
+}
+
+div.columnar figure {
+    flex-basis: 50%;
+}
+
+#content img {
+    max-width: 40em;
+    width:100%;
+    margin:auto;
+    display: block;
+}
+
+ol.drawing_steps {
+    margin-bottom: 4em;
+}
+
+ol.drawing_steps li {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 2em;
+
+}
+
+ol.drawing_steps li figure {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+
+#content ol.drawing_steps li figure figcaption aside {
+    width: 100%;
+    font-size: .9em;
+    margin-top: 1em;
+}
+
+#content ol.drawing_steps li figure * {
+    width: 45%;
+}
+
+#content ol.drawing_steps.small_img li figure img {
+    width: 15%;
+    flex-basis: 15%;
+}
+
+#content ol.drawing_steps.small_img li figure figcaption {
+    flex-basis: 70%;
+}
+
+.captioned_example {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content .captioned_example * {
+    flex-basis: 45%;
+    width: 45%;
+}
+
+.ellipse_mistakes {
+    width:75%;
+    margin:auto;
+    text-align: center;
+}
+
+.fourgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#content .fourgrid img {
+    width:45%;
+  }
+
+@media screen and (max-width: 700px) {
+    ol.drawing_steps li figure {
+        flex-direction: column;
+    }
+
+    #content ol.drawing_steps li figure * {
+        width: 100%;
+    }
+
+    .captioned_example {
+        flex-direction: column;
+    }
+
+    #content .captioned_example * {
+        width: 100%;
+    }
+        #content ol.drawing_steps.small_img li figure img {
+    width: 40%;
+}
+
+#content ol.drawing_steps.small_img li figure figcaption {
+
+    width: 100%;
+}
+
+    .fourgrid {
+        flex-direction: column;
+    }
+
+    #content .fourgrid img {
+        width: 100%
+    }
+
+}
