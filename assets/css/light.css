@@ -123,11 +123,11 @@ a {
     color: #277fd9;
 }
 
-#comics_grid .comic_cell:hover {
+.comics_grid .comic_cell:hover {
     border-color:#3ea2ff;
 }
 
-#comics_grid .comic_cell:hover h2 {
+.comics_grid .comic_cell:hover h2 {
     color:#3ea2ff;
 }
 

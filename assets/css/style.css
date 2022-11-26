@@ -597,24 +597,24 @@ section.post_listing p.datestamp {
     outline:none;
 }
 
-#comics_grid {
+.comics_grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#comics_grid .comic_cell {
+.comics_grid .comic_cell {
     max-width: 200pt;
     padding:10pt;
     border: 1px solid rgba(0%,0%,0%,0)
 }
 
-#comics_grid .comic_cell a {
+.comics_grid .comic_cell a {
     text-decoration: none;
     margin:0;
 }
 
-#comics_grid .comic_cell a h2 {
+.comics_grid .comic_cell a h2 {
     margin:0;
 }
 
@@ -646,7 +646,7 @@ section.post_listing p.datestamp {
     color: #3f3f3f;
 }
 
-#comics_grid .comic_cell:hover {
+.comics_grid .comic_cell:hover {
     border:1px solid;
 }
 
