@@ -140,8 +140,7 @@ li h3 {
     margin: 2em 2em 5em 2em;
 }
 
-#content_noheader {
-        margin: 0 2em 5em 2em;
+#content.noheader {
 }
 
 figure {
@@ -196,6 +195,15 @@ blockquote {
 #content blockquote p {
     text-indent: 0;
     font-size:1em;
+}
+
+#content .quote_attrib {
+    text-align: center;
+        text-indent: 0;
+}
+
+.quote_attrib b {
+    text-transform: uppercase;
 }
 
 
@@ -574,7 +582,7 @@ section.post_listing p.datestamp {
     text-align: center;
 }
 
-#page_display {
+#content #page_display {
     margin:auto;
     display: block;
     cursor: pointer;
