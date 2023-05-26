@@ -4,12 +4,14 @@ permalink: /sketchbook_prompts/
 layout: default
 ---
 <p>Click the button and the magic oracle will tell you what to draw!</p>
-<button onclick="random_function()" style="margin: 10pt auto; display: block;">Tell me what to draw!</button>
-<p id="output" style="border:1px solid gray; text-align: center;"></p>
+<button onclick="random_function()" style="margin: 10pt auto; display: block; ">Tell me what to draw!</button>
+<div style="text-align: center;"><input type="checkbox" id="medium" name="medium" /><label for="medium">Suggest a medium too please</label></div>
+<p id="output" style="border:1px solid gray; text-align: center; padding: 10pt; margin: 10pt auto;"></p>
 
 <p><em>Inspired by concepts suggested by Emil Wilson.</em></p>
 <script>
     let output = document.getElementById('output');
+    let medium = document.getElementById('medium');
 
     let loathed = function () {
         let choices = [
@@ -108,6 +110,10 @@ layout: default
             'JFK',
             'Stanley Kubrick',
             'Salvador Dali',
+            'Vincent Price',
+            'Peter Cushing',
+            'Katharine Hepburn',
+            'David Lynch'
         ];
 
         let styles = [
@@ -138,7 +144,11 @@ layout: default
             'Grab the nearest book, open at random, and draw the first noun that appears on that page',
             'Imply a specific color in a black and white drawing',
             'Design a new cover or title treatment for the nearest book',
-            'Design a new cover or title treatment for the last album you listened to'
+            'Design a new cover or title treatment for the last album you listened to',
+            'Invent four characters who know each other',
+            'Draw a map from your imagination',
+            'Draw your interpretation of the first photo you see on a news website',
+            'Copy some drawings by artists you admire'
         ];
 
         return get_random(choices)+"."
@@ -244,6 +254,56 @@ layout: default
         return "Using as few details as possible (think Ed Emberley), draw "+get_random(choices)
     };
 
+    let collection = function () {
+        let choices = [
+            'birds',
+            'aircraft',
+            'cars',
+            'buildings',
+            'frogs',
+            'dogs',
+            'cats',
+            'toys',
+            'foods',
+            'vegetables',
+            'fruits',
+            'bricks',
+            'tools',
+            'plants',
+            'shoes',
+            'garbage',
+            'pieces of machinery',
+            'hats',
+            'landmarks',
+            'archetypes'
+        ];
+        return "Draw at least five different "+get_random(choices)
+    };
+
+    let which_medium = function () {
+        let choices = [
+            'ink',
+            'pencil',
+            'marker',
+            'colored pencil',
+            'pastel',
+            'crayon',
+            'charcoal',
+            'grease pencil',
+            'ballpoint',
+            'brush pen',
+            'a tool you rarely use',
+            'stencils',
+            'cut paper',
+            'eraser',
+            'children\'s art supplies',
+            'typical office supplies',
+            'low-quality materials',
+            'something not meant for art'
+        ];
+        return "Using "+get_random(choices)+": "
+    };
+
 
     let get_random = function (list) {
         return list[Math.floor(Math.random()*list.length)]
@@ -253,10 +313,15 @@ layout: default
         loathed, settings, macro, costume, caricatures,
         miscellaneous,
         redraw_character, furry,
-        lettering, minimalism];
+        lettering, minimalism,
+    collection];
 
     let random_function = function () {
         let which_function = Math.floor(Math.random()*function_array.length);
-        output.innerHTML = function_array[which_function]();
+        if (medium.checked === true) {
+            output.innerHTML= which_medium() + function_array[which_function]();
+        } else {
+            output.innerHTML = function_array[which_function]();
+        }
     };
 </script>
