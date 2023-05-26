@@ -3,8 +3,10 @@ title: Sketchbook Prompt Generator
 permalink: /sketchbook_prompts/
 layout: default
 ---
-<p id="output"></p>
-<button onclick="random_function()">Generate</button>
+<p>Click the button and the magic oracle will tell you what to draw!</p>
+<button onclick="random_function()" style="margin: 10pt auto; display: block;">Tell me what to draw!</button>
+<p id="output" style="border:1px solid gray; text-align: center;"></p>
+
 <p><em>Inspired by concepts suggested by Emil Wilson.</em></p>
 <script>
     let output = document.getElementById('output');
