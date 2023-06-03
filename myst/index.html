@@ -27,3 +27,130 @@ to peruse these older versions.</p>
     <li><a href="./endofages">End of Ages.</a> No fear, Esher's here!</li>
     <li><a href="./conclusion">The Great Tree of Possibilities.</a> Final thoughts on the series.</li>
 </ol>
+
+<h2>Fireplace</h2>
+
+<! --
+ __   __  _______  __   __    _______  __   __  _______  ______    _______  __
+|  | |  ||       ||  | |  |  |       ||  | |  ||       ||    _ |  |       ||  |
+|  |_|  ||    ___||  |_|  |  |_     _||  |_|  ||    ___||   | ||  |    ___||  |
+|       ||   |___ |       |    |   |  |       ||   |___ |   |_||_ |   |___ |  |
+|       ||    ___||_     _|    |   |  |       ||    ___||    __  ||    ___||__|
+|   _   ||   |___   |   |      |   |  |   _   ||   |___ |   |  | ||   |___  __
+|__| |__||_______|  |___|      |___|  |__| |__||_______||___|  |_||_______||__|
+I mean yeah, you could just reverse-engineer the source code and find the solution that way, but
+where's the fun in that? Go back to the book (print or PDF version) and look for a clue that will guide you to
+the solution. You don't wanna be a cheater do you? ;)
+-->
+
+
+<div class="fireplace" style="display: flex; flex-direction: row; align-items: center;">
+        <button onclick="submit_fireplace()" style="background-color: red; width:12pt; height:12pt; padding:0; margin-right:10pt;">&nbsp;</button>
+    <div style="">
+    <div style="height:12pt;">
+        <input type="checkbox" id="a1"/>
+<input type="checkbox" id="b1"/>
+<input type="checkbox" id="c1"/>
+<input type="checkbox" id="d1"/>
+<input type="checkbox" id="e1"/>
+<input type="checkbox" id="f1"/>
+<input type="checkbox" id="g1"/>
+<input type="checkbox" id="h1"/>
+    </div>
+    <div style="height:12pt;">
+<input type="checkbox" id="a2"/>
+<input type="checkbox" id="b2"/>
+<input type="checkbox" id="c2"/>
+<input type="checkbox" id="d2"/>
+<input type="checkbox" id="e2"/>
+<input type="checkbox" id="f2"/>
+<input type="checkbox" id="g2"/>
+<input type="checkbox" id="h2"/>
+    </div>
+    <div style="height:12pt;">
+<input type="checkbox" id="a3"/>
+<input type="checkbox" id="b3"/>
+<input type="checkbox" id="c3"/>
+<input type="checkbox" id="d3"/>
+<input type="checkbox" id="e3"/>
+<input type="checkbox" id="f3"/>
+<input type="checkbox" id="g3"/>
+<input type="checkbox" id="h3"/>
+    </div>
+    <div style="height:12pt;">
+<input type="checkbox" id="a4"/>
+<input type="checkbox" id="b4"/>
+<input type="checkbox" id="c4"/>
+<input type="checkbox" id="d4"/>
+<input type="checkbox" id="e4"/>
+<input type="checkbox" id="f4"/>
+<input type="checkbox" id="g4"/>
+<input type="checkbox" id="h4"/>
+    </div>
+    <div style="height:12pt;">
+<input type="checkbox" id="a5"/>
+<input type="checkbox" id="b5"/>
+<input type="checkbox" id="c5"/>
+<input type="checkbox" id="d5"/>
+<input type="checkbox" id="e5"/>
+<input type="checkbox" id="f5"/>
+<input type="checkbox" id="g5"/>
+<input type="checkbox" id="h5"/>
+    </div>
+    <div style="height:12pt;">
+<input type="checkbox" id="a6"/>
+<input type="checkbox" id="b6"/>
+<input type="checkbox" id="c6"/>
+<input type="checkbox" id="d6"/>
+<input type="checkbox" id="e6"/>
+<input type="checkbox" id="f6"/>
+<input type="checkbox" id="g6"/>
+<input type="checkbox" id="h6"/>
+    </div>
+        </div>
+
+</div>
+
+<script>
+
+
+
+let columns = ['a','b','c','d','e','f','g','h'];
+
+let code = ['c1','d1','f1','h1','d2','b3','c3','e3','f3','g3','b4','c4','g4','a5','e5','f5','h5','b6','c6','d6','f6'];
+
+let submit_fireplace = function() {
+    let incorrect = 0;
+    for (let r = 1; r < 7; r++) {
+        for (const element of columns) {
+            let cell = element+r;
+            let cell_element = document.getElementById(cell);
+            let cell_value = cell_element.checked;
+            let cell_in_code = code.includes(cell);
+            if (cell_in_code) {
+                if (cell_value) {
+                    // do nothing if cell is in code and set to True
+                } else {
+                    // if cell is in code but not selected, flag as wrong and end loop
+                    incorrect = 1;
+                    return
+                }
+            } else {
+                if (cell_value) {
+                    // if cell is selected but not in code, flag as wrong and end loop
+                    incorrect = 1;
+                    return
+                } else {
+                    // if cell is not selected and is not in code, do nothing
+                }
+            }
+
+        }
+    }
+    if (incorrect === 0) {
+        location.assign('/myst/secret/');
+    }
+
+};
+
+</script>
