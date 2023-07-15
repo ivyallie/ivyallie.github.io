@@ -28,7 +28,9 @@ In the interest of transparency, here are the ways it uses JavaScript:
 
 - For improved navigation in some of my comics (specifically, pre-loading pages).
 
-- To power [The Cartoonist's Calculator](/calculator/).
+- To power [The Cartoonist's Calculator](/calculator/) and the [sketchbook prompt generator](/sketchbook_prompts).
+
+- To enable the "fireplace puzzle" for [Myst in Retrospect](/myst/).
 
 - It's possible there is some other use of it somewhere that I'm forgetting, but I promise it's something equally innocuous.
 
