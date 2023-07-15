@@ -668,6 +668,10 @@ section.post_listing p.datestamp {
     flex-direction: column;
 }
 
+#new_stuff_list li a {font-weight: bold;}
+
+#new_stuff_list li p {font-size:1em;}
+
 nav#portfolio {
     position: fixed;
     bottom: 0;
