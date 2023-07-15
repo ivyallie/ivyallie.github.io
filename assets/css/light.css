@@ -113,14 +113,20 @@ a {
     color:#277fd9;
 }
 
-#comic_navigation button {
+.comic_navigation {
     border-color: #3ea2ff;
     color: #3ea2ff;
 }
 
-#comic_navigation button:hover {
+.comic_navigation:hover {
     border-color: #277fd9;
     color: #277fd9;
+}
+
+.comic_navigation:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: default;
 }
 
 .comics_grid .comic_cell:hover {

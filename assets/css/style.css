@@ -595,7 +595,7 @@ section.post_listing p.datestamp {
     margin-top:5pt;
 }
 
-#comic_navigation button {
+.comic_navigation {
     cursor: pointer;
     border: 1px solid;
     font-family: 'Yatra One', sans-serif;

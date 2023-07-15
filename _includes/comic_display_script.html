@@ -1,15 +1,23 @@
 <div>
-             <img src="" id="page_display" onclick="nextPage()" style="max-width:50%" />
-    <img src="" id="next_page" style="display: none;"/>
-    <div id="comic_navigation">
-        <button type="button" id="back-button" onclick="previousPage()">Back</button>
+            <div id="zoom_control" style="display: flex; flex-direction: row; justify-content: center; padding-bottom: .5em;">
+
+            <button type="button" onclick="zoom('in')" class="comic_navigation" style="cursor: zoom-in;">+</button>
+        <button type="button" onclick="zoom('out')" class="comic_navigation" style="cursor: zoom-out;">-</button>
+
+        </div>
+    <div style="display: flex; flex-direction: row;">
+
         <div>
-            <button type="button" onclick="zoom('in')">+</button>
-        <button type="button" onclick="zoom('out')">-</button>
+        <img src="" id="page_display" onclick="nextPage()" style="max-width:90%" />
+        <img src="" id="next_page" style="display: none;"/>
         </div>
 
-        <button type="button" id="next-button" onclick="nextPage()" >Next</button>
     </div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <button type="button" id="back-button" onclick="previousPage()" class="comic_navigation">Back</button>
+         <button type="button" id="next-button" onclick="nextPage()" class="comic_navigation" >Next</button>
+    </div>
+
 </div>
 
     <script>
