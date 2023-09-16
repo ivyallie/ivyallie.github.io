@@ -5,60 +5,346 @@ permalink: /myst/myst/
 layout: myst
 ---
 
-![The Mechanical Age of Myst](/assets/images/myst/01-myst.jpg)
+> "You have just stumbled upon a most intriguing book, a book titled Myst." - Introduction to the *Myst* game manual
 
-_Myst_ is unique, a bizarre amalgamation of concepts that is unmatched even by its own sequels. It is by turns grim or whimsical. It requires logical thought but is set in a nonsensical universe. Its narrative is sophisticated on some levels and underdeveloped in others. Some seemingly ordinary things have great narrative significance, some especially strange things do not. It is, above all, a strange and unique experience.
+![Illustration of the Mechanical Age of Myst by Ivy Allie](/assets/images/myst/01-myst.jpg)
 
-Described in the simplest possible terms, _Myst_ is a game about exploration. You have arrived in a strange place. What do you do? Naturally, you begin to look around. The game is your camera, your window. The cursor is your hand. The music is your intuition. The game involves no role-playing: rather, it turns your computer into a gateway through which _you_ can enter another universe.
+*Myst* is unique. It was a game that carved out a niche all its own; it
+was groundbreaking at the time of its release in 1993 and even thirty
+years later there are few titles that have successfully emulated its
+formula. Not to imply that it's perfect; in fact, it's very uneven
+overall. It's a strange blend of the macabre alongside the whimsical,
+nonsensical design choices butting up against logic puzzles, and
+imaginative visuals stymied by the limitations of technology. But there
+is a reason that *Myst* sold six million copies and went on to spawn an
+entire series: despite its shortcomings, *Myst* was genuinely good.
 
-In its eagerness to blaze a new trail, _Myst_ can at times feel as if it's reluctant to identify itself as a video game at all. The game opens with a cinematic intro, complete with opening credits. Likewise, additional credits roll whenever the player quits. The game's imagery is nestled between black bars like a letterboxed film. There's nothing wrong with this approach necessarily, but it does to some extent highlight that video games, especially slow games like _Myst_, were in a state of relative infancy in 1993. The strengths of the medium had yet to be fully uncovered, and creators had to look to other media for guidance.
+Described in the simplest possible terms, *Myst* is a game about
+exploration. You have arrived in a strange place. What do you do?
+Naturally, you begin to look around. The game is your camera, your
+window. The cursor is your hand. The music is your intuition. The game
+involves no role-playing: rather, it turns your computer into a gateway
+through which *you* can enter another universe.
 
-But if _Myst_ is a movie, it's also a novel. The bulk of the game's backstory is relayed through a series of journals which can be found in the central library. These introduce the player to both the characters and the settings which she will encounter over the course of the game by means of a literal written narrative. These journals correspond to the game's different worlds, called "Ages," and as they contain necessary clues, the player cannot proceed without reading them carefully. This ensures that she will not escape into the game's furthest reaches without understanding its backstory, which shows a good deal of foresight on the part of the game's creators. Likewise, they provide us with insight into the character of Atrus, which will be crucially important later on. 
+In many ways, *Myst* was an exemplar of the concept of "multimedia" that
+was prevalent throughout the 90s. The CD-ROM, capable of holding over
+600 megabytes of information, was at the forefront of this. Even for the
+few people who had Internet access in the early 90s, it wasn't practical
+for transferring anything other than text and some very simple graphics.
+But a CD-ROM could contain much more: not just images but video and
+audio clips as well. The most immediate application of this concept was
+in educational products, such as Microsoft's Encarta encyclopedia, which
+shipped with a wide selection of articles, images, and video clips.
+*Myst*'s creators, the game studio Cyan, were also among the earliest
+adopters of the CD-ROM for educational purposes, their earliest releases
+being games for children. *Myst* was a natural evolution of the concept,
+using the principles and technologies of multimedia to build not a
+learning tool for children but an experience for adults.\*
 
-The journals also add a crucial amount of depth to the experience by creating a mental image of a livelier past, one which will stand in stark contrast to the lifeless environments the player will eventually discover. 
+\**Myst* has also been called the "killer app" that drove sales of
+CD-ROM drives on a wide scale: you didn't need a CD-ROM drive for your
+productivity software yet, but you did need one if you wanted to try out
+this popular new game. 
+{: .aside }
 
-Finally, the journals prime the player's expectations before she actually has an opportunity to visit an Age, and thus give rise to a somewhat unique phenomenon I call the Tourist Effect. This refers to the sensation of seeing a place in "real life" which one has previously only read about; there is a spark of recognition but things are not quite as one expected. By describing the Ages in text prior to allowing the player to visit them, two separate "layers" of fictional representation are created, and thus the eventual reveal of the Age itself somehow feels more "real" than it might have otherwise. By utilizing the written word, Cyan took advantage of the player's imagination, and in doing so followed in the example of _Myst_'s text-based ancestors.
+*Myst* was also part of another largely forgotten trend in video games,
+the "interactive movie" or "full-motion video (FMV) game." These used
+realistic graphics and (often) live-action footage to create a game that
+felt more closely related to film than to the arcade. Early examples had
+been distributed on Laserdiscs, and *Myst*, along with contemporaneous
+titles like *Phantasmagoria* and *The Seventh Guest*, brought the
+phenomenon to the CD-ROM and by extension the personal computer. *Myst*
+was not billed as an interactive movie, but nevertheless wears its
+cinematic influences on its sleeve, displaying its imagery between black
+bars like a letterboxed film, and rolling credits not only during its
+intro but every time the game quits. And it utilizes live action as
+well, its characters portrayed by none other than Cyan's founders, the
+brothers Rand and Robyn Miller.
 
-The game opens, as I've mentioned already, with a short cutscene: Atrus falls into "the Fissure" and loses his Myst book, which, he narrates, may end up in the hands of a complete stranger. The game turns over control to the player shortly later, with a view of the Myst book lying on the ground, inviting the player to pick it up. This is a clever opening. It gets off to a good start with an amiguous backstory, touches on the question of who might find the book, then reaches out to the player and indicates: _You. You're the one who finds it._ There's hardly been a more powerful invitation to enter into a virtual reality.
+The game's control scheme is one that's instantly intuitive to anyone
+who's used a mouse. The world is seen through a series of static
+"shots", and you click to move through the world or interact with
+objects. If you want to walk further up a path, you click the path. If
+you want to turn right, click on the right edge of the screen. If you
+want to pull a lever, click the lever. *Myst*'s frame-by-frame
+presentation has been derided as a "slideshow" in the years since, but
+it's important to acknowledge how unobtrusive this setup is. The static
+framing of the scenery may be less immersive than the 360-degree views
+afforded by some of the later games, but they're also less disorienting,
+in part because this method enabled the game's creators to carefully
+compose every shot to make it clear what you can or can't do, what is or
+is not important. The mechanics of playing *Myst* are so obvious and
+easy to understand that in the first edition of this book I forgot to
+even *mention* them.
 
-Before we move on, let's take a moment to review the backstory. In short, it revolves around a now-extinct race of people called the D'ni, who had the ability to create "Linking Books" which can physically transport people to other worlds. They called this technology the Art, and the worlds to which they linked were called Ages. _Myst_ doesn't deal with the D'ni directly, though, but rather focuses on Atrus, one of their few surviving descendants and practitioners of the Art. 
+*Myst* opens with a short cutscene: a man is seen falling into a glowing
+chasm, a book in his hands. He suddenly vanishes, but the book continues
+falling. You watch as it tumbles through a field of stars and listen to
+the man's voiceover narration: "I realized \[\...\] the book would not
+be destroyed as I had planned," he says. "Questions about whose hands
+might one day hold my Myst book are unsettling to me." His monologue
+ends with the words "the ending has not yet been written," spoken as you
+see the Myst book land on the ground. It is an efficient and effective
+opening: it alludes to a mysterious backstory, touches on the question
+of who might find the book, then reaches out to the player and
+indicates: *You. You're the one who finds it.*
 
-It's worth noting that the concept of the Art is not dissimilar to what Cyan itself had done both in _Myst_ and in the childrens' games that preceded it: they had leveraged a technology in order to "transport" people into strange and imaginative worlds of their own creation. Intentional or not, it's a nice little parallel, one which somehow turns the series into a metaphor for itself.
+After picking up the Myst book, you are transported ("Linked", to use
+the in-universe terminology) to Myst Island, which will be the central
+hub of your explorations. The island is essentially a junction that
+holds the rest of the game together. It is here that you will learn the
+backstory by reading journals, interact with the game's characters, and
+solve puzzles in order to gain access to the game's other environments
+("Ages").
 
-The game's first environment is the eponymous Myst Island, which serves as a sort of hub for the player's explorations. It is not itself a destination in the same sense the Ages are. Rather it is more of a junction that holds the rest of the game together, providing backstory through the journals, puzzles which must be solved to gain access to the Ages, and the avenues through which the player can interact directly with the game's characters. Sadly, the island seems more dated than anything else in this first installment. It isn't a believable world as the other Ages are, but rather a gameplay necessity that seems barely coherent at best. Its jumble of unrelated objects and complete lack of standard living facilities make it feel more like a mini-golf course than a functional environment. Creating believable environments is always a tall order, and one which this series generally succeeds at fairly well, but it is somewhat disappointing that its most familiar location falls somewhat short of the goal.
+Though Myst Island has become iconic, its design is less coherent than
+anything else in this first installment. Its jumble of unrelated objects
+and lack of standard living facilities make it feel more like a
+mini-golf course than a functional environment. Creating believable
+worlds is always a tall order, and one which this series generally
+succeeds at fairly well, but its most familiar location falls somewhat
+short of the goal.
 
-The Library on Myst Island is, appropriately, the game's primary repository of story content. Much of this is contained in the journals, as discussed earlier, but the Library is also the one place where the player has opportunity to interact directly with the game's characters. Sirrus and Achenar, Atrus's sons, appear to the player from inside their Linking Book prisons. The brothers mark the first appearance of live humans in the game (excluding the intro) and unusually for a video game, they are portrayed by live actors (portrayed, in fact, by _Myst_ creators Rand and Robyn Miller). This lends the game a degree of credence it couldn't have achieved otherwise. 
+The Library on Myst Island is the game's primary repository of story
+content, which comes in the form of journals. There is one for each of
+the Ages, and they take the form of travelogues. The author describes
+something called The Art, a method by which he is able to travel to
+other worlds by writing about them in special "Linking Books." While the
+author's name is not revealed within the journals, you can infer that it
+is Atrus, a name you learn from a note that is among the first things
+you find on Myst Island. The journals also discuss his sons, Sirrus and
+Achenar, and his wife, Catherine.
 
-The brothers' dialogues are an important part of the game's narrative structure. The brothers plead with the player to retrieve red and blue pages, which, they assure her, are the keys to their release from unjust imprisonment. At first the player has no choice but to trust them implicitly, as there's no reason to doubt them and no one to contradict them. As the game goes on, however, she will begin to uncover signs that the brothers aren't telling the whole truth, and the fact that they frequently contradict each other doesn't do them any favors. The game's central question is whether Sirrus or Achenar can (or should) be trusted, and the player's ability to hear from them directly contributes to player engagement in a way which would not have been possible otherwise.
+In addition to establishing the principal characters, the journals also
+construct a mental image of the Ages for the player. This means that
+when you finally visit an Age after reading about it, you not only
+experience a feeling of familiarity, but also are strongly cognizant of
+certain disconnects between the worlds described in the books and the
+worlds as they are in the game's present. The historical accounts paint
+them as vibrant and inhabited, but what you find will instead be barren
+and lifeless. It's definitely the same place you read about, but
+something has gone horribly wrong. In this way, the game plays words and
+images against each other to form a larger narrative within the player's
+head.
 
-The red and blue pages themselves are basically a gameplay mechanic which provides the player with a specific and uncomplicated short-term goal. The game makes the pages' function clear at the outset by providing the first page right in the Library, so the player understands that adding pages to the books improves the "signal strength." While the player likely needs no coaxing to explore the Ages, the pages' existence creates a sense of structure that informs how the player approaches the experience. Thus, to learn the brothers' stories, the player knows she must find as many pages as possible, which she can only do by visiting the Ages. 
+Elsewhere in the Library, the player will also encounter Sirrus and
+Achenar, who have somehow become trapped in a pair of Linking Books,
+through which the player can see and hear them. They are blurry and
+distant at first, and they plead with you to find red and blue pages
+that will set them free. They each claim to be innocent of wrongdoing
+while implicating the other. With every page retrieved, the brothers'
+"signal strength" improves, enabling them to speak more clearly.
 
-All the Ages have roughly the same structure: the player must solve a series of puzzles in order to find the pages, then the player must solve a second series of puzzles in order to return to Myst. While searching the Ages, the player also discovers clues that reveal the events of the past. The lively places described in Atrus's journals have become cold and lifeless, and littered with evidence of the brothers' wrongdoings. It is through this ephemera that the player learns the truth about Sirrus and Achenar: that both have committed heinous crimes and neither deserve to be released. From the journals the player learns the backstory of each Age; from her explorations she learns what happened between then and "now."
+The game's central question, which the player must answer, is which of
+the brothers is telling the truth -- assuming either of them are. While
+you likely need no coaxing to explore the game's environments, this
+setup establishes the narrative that you'll be playing in the game's
+"present day." To learn the brothers' stories, you must find as many red
+and blue pages as possible, which you can only do by visiting the Ages.
 
-The brilliance of the way this story is conveyed is that none of the pertinent details are revealed through exposition. The story of the brothers' conquests is told entirely by their castoff possessions. Achenar's spaces are filled with macabre trophies, instruments of torture, and weapons. Sirrus's are filled with gold, jewels, finery, and drugs. While these signs are hardly subtle, the way in which they convey the truth about the brothers is quite groundbreaking. The player explores these spaces in silence, the game's creators trusting her to put the pieces together without hand-holding. Twenty years after _Myst_, _Gone Home_ would be hailed by critics for its use of environment as a storytelling device, but it still utilized extensive narration, not trusting the visuals to convey their story without help. _Myst_ proves that this can be done, and sets an example that game creators would be wise to follow.
+Each Age has a corresponding puzzle on Myst Island which, when solved,
+grants you access to a new Linking Book. These puzzles are designed in
+such a way that they cannot be solved without first finding relevant
+clues from the journals, which prevents the player from arriving in the
+Age without first being acquainted with its backstory.
 
-Each of the game’s four Ages has a unique visual and auditory atmosphere that unifies disparate parts within the Age while making it distinct from the others.  Compared to what we'd see in later games, _Myst_'s Ages are relatively small (a fact no doubt due to the familiar bugaboo of technical constraints), but each one is varied enough to give the sensation that there’s something interesting around every bend.  Much of this is conveyed through the visuals, which while not as impressive as they must have been in 1993, still hold up fairly well. The images are richly detailed and believable; the textures especially have a veracity to them which was absent from most of _Myst_'s contemporaries and imitators. A great deal of care was taken in the rendering of most foreground objects, so the environments feel very rich despite a relative lack of detail in the terrain. 
+All of the Ages follow the same structure: you must solve a series of
+puzzles in order to find the red and blue pages, then you must solve a
+second series of puzzles in order to return to Myst Island. While
+searching the Ages, you will also discover clues that reveal the events
+of the past. The lively places described in Atrus's journals have become
+cold and lifeless, and are littered with evidence of the brothers'
+wrongdoings. It is through this ephemera that the player learns the
+truth about Sirrus and Achenar: that both have committed heinous crimes
+and neither deserve to be released.
 
-The strong atmosphere of the visuals is further complemented the sound design: dripping water echoes through a dark tunnel, birdsong and creaking timber drift through the walls of an abandoned treehouse. These auditory cues greatly influence the mood of the places where we find them, in addition to enhancing the realism of the scene. 
+Yet none of the pertinent details are revealed through exposition. The
+story of the brothers' conquests is told entirely by their castoff
+possessions. Achenar's spaces are filled with macabre trophies,
+instruments of torture, and weapons. Sirrus's are filled with gold,
+jewels, finery, and drugs. While these signs are hardly subtle, the way
+in which they convey the truth about the brothers was groundbreaking.
+The game's creators trust you to put the pieces together without
+hand-holding. Twenty years after *Myst*, *Gone Home* would be praised by
+critics for its use of environment as a storytelling device, but it
+still utilized extensive voiceover narration, not trusting the visuals
+to convey their story without help. *Myst* proves that this can be done.
 
-Music is an important component as well. Sirrus and Achenar each have specific musical themes which reflect their dark personalities. These themes are heard in the brothers' personal spaces within each Age, thus creating an association in the player's mind before she even begins to explore the area. Each Age has its own musical motifs as well, in much the same way that each Age has a distinct visual appearance.
+*Myst* includes four separate Ages (not counting Myst Island). Compared
+to what you'll see in later games, *Myst*'s Ages are relatively small
+(in part due to technical limitations), but each one is varied enough to
+give the sensation that there's something interesting around every bend.
+Much of this is conveyed through the visuals, which still hold up fairly
+well overall. The images are richly detailed and believable. The
+textures especially have a veracity to them which was absent from most
+of *Myst*'s contemporaries and imitators. A great deal of care was taken
+in the rendering of most foreground objects, so the environments feel
+very rich despite a relative lack of detail in the terrain.
 
-_Myst_'s creators did a remarkable job creating atmospheric environments for this game, and the fact that they did so under the considerable technical limitations of the early nineties makes their accomplishments that much more impressive. 
+Sound contributes to the atmosphere as well. Evocative ambient noises
+are employed throughout the game: dripping water echoes through a dark
+tunnel, birdsong and creaking timber drift through the walls of an
+abandoned treehouse. But music is even more important, setting the mood
+for a space even before you begin to explore it.
 
-Each of the Ages is significant, so we'll look at each in turn, beginning with the smallest, Mechanical. The Mechanical Age consists only of a small fortress and two tiny islands. Diminutive as it is, it clearly demonstrates the principles by which *Myst* conveys its story. From Atrus’s journals we learn that the inhabitants of the Mechanical Age were besieged by pirates, and that Atrus helped them fight back by constructing a special stronghold. When the player arrives, though, the fortress is abandoned, and littered with clues that suggest Sirrus and Achenar reversed its function and used it to attack the inhabitants. As discussed earlier, the brothers' true personalities can be gleaned from their possessions: Sirrus's chamber is filled with art and valuables, Achenar's with cruel weapons and poisons. Since this Age has relatively few features other than the brothers' rooms, they become front and center to the exploration of Mechanical. There are few signs of the Age's original inhabitants, and nothing much to look at elsewhere in the fortress. This isn't to say that the Age is disappointing or uninteresting, just that it tends to feel limited compared to the others.
+Each of the Ages is significant, so we'll look at each in turn,
+beginning with the smallest, Mechanical. The Mechanical Age consists
+only of a small fortress and two tiny islands. Diminutive as it is, it
+clearly demonstrates the principles by which *Myst* conveys its story.
+From the journals we learn that the inhabitants of the Mechanical Age
+were besieged by pirates, and that Atrus helped them fight back by
+constructing a special stronghold. When the player arrives, though, the
+fortress is abandoned, and littered with clues that suggest Sirrus and
+Achenar reversed its function and used it to attack the inhabitants. The
+fortress is littered with plunder, and a makeshift torture chamber has
+been constructed inside its walls. It's the game's most straightforward
+interpretation of its formula.
 
-The expansive Channelwood Age represents the opposite end of the spectrum, and highlights a theme that would recur frequently throughout the series: the relationship between exploration and conquest. In general the series paints exploration in a relatively positive light, but the issue of the outsider and the “primitive native” inevitably recur. In his Channelwood journal, Atrus describes the natives as “monkey-like people” and states that they seem to worship him as some sort of deity. He’s pretty uncomfortable with this, being a conscience-driven and secular person, and warns the young Sirrus and Achenar not to take advantage of the natives’ respect. Naturally, the brothers eventually go against their father’s injunctions: in the game's present day, the natives' treehouses stand vacant, and a sacrificial temple with an altar to Achenar has been constructed in the treetops.  The naive acceptance demonstrated by the Channelwood natives proved too enticing for the budding psychopathy of the brothers; even Atrus's journal implies that the brothers had a somewhat unsettling fascination with the Age when he brought them there as children. The tension between explorers and primitive natives will be discussed further in later installments, but the events of Channelwood set a clear precedent for this particular theme. 
+The expansive Channelwood Age represents the opposite end of the
+spectrum, and highlights a theme that would recur frequently throughout
+the series: the relationship between exploration and conquest. This
+often manifests as a stereotypical situation involving technologically
+"advanced" explorers encountering relatively primitive natives.
+Channelwood marks the first appearance of this theme: Atrus describes
+the natives as "monkey-like people\'\' and states that they seem to
+worship him as some sort of deity. He's uncomfortable with this, being a
+conscience-driven and secular person, and warns the young Sirrus and
+Achenar not to take advantage of the natives' respect. But predictably,
+the reverence demonstrated by the Channelwood natives proved too
+enticing for the budding psychopathy of the brothers: in the game's
+present day, the natives' homes stand vacant, and a sacrificial temple
+with an altar to Achenar has been constructed in the treetops.
 
-The Age itself is a pleasant one. The maze of treehouses can be confusing, but the overall look is very appealing, and the sheer size of the age makes its exploration very rewarding. The quietness of the Age is actually utilized to great effect, making the eventual discovery of the brothers' macabre chambers stand out in stark contrast to the rest of the Age. Channelwood, as the first sizable Age in the series, set a strong example for later games to follow.
+The Age itself is a maze of treehouses and boardwalks, which can be
+confusing to navigate, but it's visually appealing and it feels very
+expansive. Where most of the other Ages are limited to a small cluster
+of rooms, Channelwood is a sprawling web of bridges and treehouses that
+take a while to explore. Channelwood set a precedent; Ages in later
+games would all be expected to measure up to its example.
 
-Stoneship is another small age, only marginally larger than Mechanical, but it has a number of visually distinct areas which make it seem bigger than it actually is. Sirrus and Achenar both have elaborate “bedrooms” which don’t have much in common with the rest of the Age in terms of overall aesthetics, but well reflect their personalities: Sirrus’s is decked out in palatial opulence and Achenar’s looks like the chamber of an evil wizard. Other areas include a ship (sunken but perfectly preserved), a lighthouse, a mountaintop overlook, and an underwater tunnel. Where in most of the other Ages the various sub-areas stay fairly close to the overall “look,” those in Stoneship tend to stray away from the rocky, windworn look we see elsewhere in the Age. This makes the Age somewhat inconsistent, especially where the brothers’ bedrooms are concerned, but each of the areas has such a strong and distinct atmosphere that it doesn’t really matter. The underwater tunnel, for example, seems surprisingly high-tech in the context of the rest of the age, but its deep, slighly menacing mood is intriguing enought that it doesn't matter. There’s something to be said for overall consistency, but Stoneship demonstrates that there’s nothing wrong with a digression, as long as it’s a good one. 
+Stoneship is another small Age, only marginally larger than Mechanical,
+but it has a number of visually distinct areas which make it seem bigger
+than it actually is. Sirrus and Achenar both have elaborate
+"bedrooms\'\' which don't have much in common with the rest of the Age
+in terms of overall aesthetics, but well reflect their personalities:
+Sirrus's is decked out in palatial opulence and Achenar's looks like the
+chamber of an evil wizard. Other landmarks include a ship (sunken but
+perfectly preserved), a lighthouse, a mountain top overlook, and an
+underwater tunnel. Where in most of the other Ages the various sub-areas
+stay fairly close to the overall "look," those in Stoneship tend to
+stray away from the rocky, windworn look we see elsewhere in the Age.
 
-Perhaps the strangest Age is Selenitic: it consists of a relatively large island, mostly featureless but with a few different areas and buildings scattered across it more or less randomly. There’s a clock tower, a geothermal power station, a “forest” of harmonious crystals, and so on, but their existence and placement seem practically random. Furthermore, the Age was never inhabited and has no valuable plunder, and thus of no interest to Sirrus and Achenar, so (not surprisingly) we learn nothing about them here. For that reason the Age has practically no story content. There's nothing to do here but to find the pages and solve the notoriously frustrating Mazerunner puzzle in order to return to Myst. But while it lacks story, Selenitic does one-up the other Ages by having a distinct central theme: sound. Nearly all of the Age’s puzzles involve sound of some sort: gaining access to the Mazerunner requires a sequence of sounds collected from around the island, and the Selenitic book itself has a musical lock (which unintentionally protects it from tone-deaf travelers). It’s a clever idea, and one that has far more potential than was even realized, but the Age’s complete lack of content outside its theme makes the whole thing fall a little flat. 
+Perhaps the strangest Age is Selenitic: it consists of a relatively
+large island, mostly featureless but with a few different areas and
+buildings scattered across it more or less randomly. There's a clock
+tower, a geothermal power station, a "forest" of harmonious crystals,
+and so on, but their existence and placement seem practically random.
+Furthermore, since the Age was never inhabited and has no valuable
+plunder, it was of no interest to Sirrus and Achenar, and thus we learn
+nothing about them here. For that reason the Age has practically no
+story content. There's nothing to do here but to find the pages and
+solve the notoriously frustrating Mazerunner puzzle in order to return
+to Myst.
 
-If _Myst_'s primary strengths are its atmosphere and story, its primary weakness is its gameplay, especially its puzzles. The puzzles have always been an area of contention among players; some people really like them and others find them to be little more than a necessary evil. But _are_ puzzles truly necessary? Most of _Myst_'s puzzles are poorly integrated in terms of plausibility; in-universe they are generally explained as complicated locks meant to protect Linking Books from strangers, but of what use is a lock if can be opened easily by anyone with lateral thinking skills? As a result the puzzles begin to feel contrived, clearly meant to slow down and/or gratify the player rather than to provide any plausible function. This is why the game has become widely remembered as "that game with the annoying puzzles." The puzzles _are_ annoying, they are obtuse and obviously irrelevant to the environment they exist in. More recent games have changed the way gameplay obstacles are approached: Puzzles in _Botanicula_ tend to be more like quirky, self-contained mini-games. _Gone Home_, flawed though it is, eschews puzzles entirely and provides as obstacles a few locked doors with hidden keys. These techniques significantly enhance the gameplay simply by not interfering with it. Even for those of us, myself included, who have enjoyed solving the puzzles, sometimes one just wants to get on with the story, without having to learn the exact location of a lighthouse to do so.
+But while it lacks story, Selenitic does have a distinct central theme:
+sound. Nearly all of the Age's puzzles involve sound of some sort:
+gaining access to the Mazerunner requires a sequence of sounds collected
+from around the island, and the Selenitic Book itself has a musical lock
+(which unintentionally protects it from tone-deaf travelers). *Myst*, as
+mentioned previously, was a product of the "multimedia" era, and its
+marriage of realistic graphics with atmospheric sound design was one of
+its selling points, but Selenitic was one of very few parts of the game,
+and even the series overall, that made sound the focus of the gameplay.
+In a way, it now feels like an artifact of the time when the game was
+being created; one of the many aspects of its design that were
+experimental. And while it did not ultimately prove to be one of
+*Myst*'s more influential innovations, it was an interesting change of
+pace for the game.
 
-The eventual realization that both brothers are guilty leads into a trope which I will call the Final Big Choice. Once the brothers have received all but one of the pages, they explain how to find the final page, the one which will set them free. By this point it should be pretty clear that releasing them is a bad idea, but there’s one final catch: alongside the final pages there’s another book. Both of the brothers insist the book must be left alone, claiming it’s just another trap. This is the Final Big Choice: the player can either release one of the brothers, or assume that they’re lying again and investigate the book. After all the brothers' lies I doubt many people believed them at this point, but still the player must independently decide that the third option (regardless of what it is) is probably preferable to freeing either of the brothers. That the creators didn't feel the need to explictly highlight the third option demonstrates that they place a good deal of trust in the player's intelligence, something I'd like to see game developers attempt more often. The Final Big Choice became a defining moment for the series, one which would be emulated by *Exile*, *Revelation, *and *End of Ages*. 
+If *Myst*'s primary strengths are its atmosphere and story, its primary
+weakness is its gameplay, especially its puzzles. The puzzles have
+always been an area of contention among players; some people really like
+them and others find them to be little more than a necessary evil.
 
-The game’s conclusion, sadly, is not entirely satisfying. The player chooses the third option and meet Atrus, who reveals the true backstory: the brothers trapped their parents on separate Ages in order to gain control of Atrus’s library, before ultimately becoming entrapped in the prison books. With the player's help, Atrus links back to Myst and destroys the prison books with the brothers still inside them, then gives the player permission to explore his Ages as a reward. Thus, the game's thrilling conclusion is that the player gets permission to explore the places she's explored already. It's an anticlimax of the worst kind, a "good" ending with less closure than the bad endings. (This was corrected somewhat in the remake, _realMyst_, which added a small bonus Age made accessible only after the conclusion.) That said, I think this lack of an ending is actually intentional, and is meant to be taken as an invitation to continue revisiting the Ages despite the narrative being complete. It’s another way in which the game is distancing itself from its peers of the time: yes, the story is finished, but we’re not taking the world away from you. You may continue to explore at your leisure. Most people expect closure, so as a storytelling tactic this does seem awkward at best, but still there’s something rather charming about it. It’s another grand experiment in a game made up of grand experiments. 
+But *are* puzzles truly necessary? Most of *Myst*'s puzzles are poorly
+integrated in terms of plausibility. In-universe they are generally
+explained as complicated locks meant to protect Linking Books from
+strangers, but puzzles are not effective locks, especially not when
+clues are left lying around. As a result the puzzles begin to feel
+contrived, clearly meant to slow down and/or gratify the player rather
+than to provide any plausible function. This may be why the game has
+become widely remembered as "that game with the annoying puzzles." The
+puzzles *are* annoying, they are obtuse and obviously irrelevant to the
+environment they exist in.
 
-So, in the end, is _Myst_ a success or a failure? Like many things, it has elements of both. It has a strong story, atmosphere, and attractive visuals. On the other hand, it has some nonsensical design elements, restrictive technical constraints, and a handful of appallingly terrible puzzles. Still, looking beyond its issues,  _Myst_ is a necessary, and largely successful, first step. The format had not yet been perfected, but the creators managed to build an enjoyable experience anyway, one which would set a standard for the successes and failures of later installments.
+Most of *Myst*'s puzzles require a "pen and paper" approach. These are
+puzzles that expect you, the player, to keep notes on the things you
+find during your explorations, or even to keep full-on journals as Atrus
+did. Some versions of the game shipped with a blank notebook in the box.
+(And many players took this invitation very seriously -- in years past,
+"player journals" documenting one's gameplay experience were a staple of
+fan message boards.) *Myst*'s puzzles require you to write down scraps
+of information and draw diagrams. The game is generous with its hints,
+but you must document them yourself, or physically return to the place
+where you found them if you need to see them again. This is a style of
+game design that has since fallen out of favor, but in a way it's
+distinctly of an era: *Myst* was a game one would play at a desk in a
+home office, a space where pens and paper were close to hand already.
+
+But putting aside the more overt logic puzzles, let's return to the more
+subtle psychological puzzle that forms the core of the game's story. You
+have visited all four Ages and seen the evidence of the brothers'
+wrongdoings. You have collected the red and blue pages and heard the
+brothers' version of events. Now they explain to you how to find the
+final pages, the ones that have the power to set them free.
+
+This leads you into the first instance of a recurring trope that I call
+the Final Big Choice. By this point, you've seen enough to realize that
+despite their protestations, both brothers are guilty. The question of
+which brother should be released has been answered: neither of them,
+probably. But there's one final catch: alongside the final pages there's
+another book. Both of the brothers insist the book must be left alone,
+claiming that if you touch it, you'll be trapped in it as they are. This
+is the Final Big Choice: you can either choose to release one of the
+brothers, or you can choose not to believe them and investigate the
+forbidden book. Again the game's creators have placed their trust in
+you, the player. You know the brothers are liars, and you can infer that
+their insistence that you not touch the book probably indicates that you
+should, even though you don't know what the book will do. The Final Big
+Choice became a defining moment for the series, one which would be
+emulated by *Exile*, *Revelation, *and *End of Ages*. 
+
+So you pick up the forbidden book, and come face to face, finally, with
+Atrus. He tells you his own version of events, the only one that lines
+up with all the evidence you've seen along the way: the brothers trapped
+Atrus in order to gain control of his library, before ultimately
+becoming entrapped in the prison books themselves. Now Atrus needs the
+player's help to be set free from his own prison and bring his sons to
+justice. (Hypothetically you could choose to disbelieve Atrus and free
+one of the brothers instead, although I doubt anyone would.) Once freed,
+Atrus links back to Myst and destroys the prison books with the brothers
+still inside them.
+
+When Atrus returns to the player, he thanks you for your help and
+apologetically offers, as a reward, permission to continue exploring his
+Ages. It's a definite anticlimax, an ending with little closure and
+nothing gained except Atrus's blessing. That said, I think this lack of
+an ending is actually intentional, and is meant to be taken as an
+invitation to continue revisiting the Ages despite the narrative being
+complete. As Atrus says: "feel free to explore, at your leisure. And I
+hope you find those explorations satisfying." Most people expect
+closure, so as a storytelling tactic this does seem awkward at best, but
+still there's something charming about it. It's another experiment in a
+game filled with experiments.
+
+*Myst* is a remarkable experience, and an incredibly confident artistic
+statement on the part of its creators, who seem to have known exactly
+what they were making despite it being unlike anything that had come
+before it. *Myst* is a story built up from disparate elements (visual,
+textual, acoustic, and musical), which form into a complete picture
+inside the player's head. It set the standard that its sequels (and
+imitators) would follow, to varying degrees of success. It brought to
+the nascent CD-ROM format, and the multimedia era, a memorable tale told
+through vibrant graphics, memorable characters, and evocative sounds.
+
+It was, above all, an adventure.
