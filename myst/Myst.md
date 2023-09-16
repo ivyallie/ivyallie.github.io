@@ -8,6 +8,7 @@ layout: myst
 > "You have just stumbled upon a most intriguing book, a book titled Myst." - Introduction to the *Myst* game manual
 
 ![Illustration of the Mechanical Age of Myst by Ivy Allie](/assets/images/myst/01-myst.jpg)
+{: .myst_image}
 
 *Myst* is unique. It was a game that carved out a niche all its own; it
 was groundbreaking at the time of its release in 1993 and even thirty

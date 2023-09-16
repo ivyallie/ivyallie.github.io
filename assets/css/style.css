@@ -710,6 +710,13 @@ ul.front_page_recent a { font-weight: bold;}
 
 ul.front_page_recent span.datestamp {color:#555;}
 
+.myst_image {
+    float: left;
+    margin-right: 20pt;
+    width: 50%;
+    
+}
+
 @media screen and (min-width: 1050px) {
     #content {
         max-width:1000px;
@@ -758,4 +765,12 @@ ul.front_page_recent span.datestamp {color:#555;}
         flex-direction: column;
         text-align: center;
     }
+    
+    .myst_image {
+    float: none;
+    margin-right: inherit;
+    width: 100%;
+    
+}
+    
 }
