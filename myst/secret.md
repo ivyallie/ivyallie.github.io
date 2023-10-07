@@ -39,5 +39,6 @@ Rough sketch for the Stoneship telescope. The perspective on this one was a real
 I'm pleased with how it turned out.
 
 ## Puzzle-Solver Hall of Fame
-If you're reading this, you may be the first person to solve the puzzle! Please send me an email
-to secure your rightful place on the page!
+Be it known that the following persons successfully solved the fireplace puzzle!
+
+1. Adrian Neville (September 2023)
