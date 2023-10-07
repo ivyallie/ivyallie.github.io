@@ -122,40 +122,45 @@ the solution. You don't wanna be a cheater do you? ;)
 
 let columns = ['a','b','c','d','e','f','g','h'];
 
-let code = ['c1','d1','f1','h1','d2','b3','c3','e3','f3','g3','b4','c4','g4','a5','e5','f5','h5','b6','c6','d6','f6'];
+let classic = ['c1','d1','f1','h1','d2','b3','c3','e3','f3','g3','b4','c4','g4','a5','e5','f5','h5','b6','c6','d6','f6'];
+
+let remake = ['a1', 'c1', 'e1', 'f1', 'g1', 'c2', 'd2', 'e2', 'f2', 'a3', 'c3', 'd3', 'g3', 'a4', 'b4', 'f4', 'a5', 'e5', 'e6', 'f6', 'g6', 'h6'];
+
+let codes = [remake,classic];
 
 let submit_fireplace = function() {
-    let incorrect = 0;
-    for (let r = 1; r < 7; r++) {
-        for (const element of columns) {
-            let cell = element+r;
-            let cell_element = document.getElementById(cell);
-            let cell_value = cell_element.checked;
-            let cell_in_code = code.includes(cell);
-            if (cell_in_code) {
-                if (cell_value) {
-                    // do nothing if cell is in code and set to True
+    for (let i = 0; i < codes.length; i++) {
+        let incorrect = 0;
+        for (let r = 1; r < 7; r++) {
+            for (const element of columns) {
+                let cell = element + r;
+                let cell_element = document.getElementById(cell);
+                let cell_value = cell_element.checked;
+                let cell_in_code = codes[i].includes(cell);
+                if (cell_in_code) {
+                    if (cell_value) {
+                        // do nothing if cell is in code and set to True
+                    } else {
+                        // if cell is in code but not selected, flag as wrong and end loop
+                        incorrect = 1;
+                        break
+                    }
                 } else {
-                    // if cell is in code but not selected, flag as wrong and end loop
-                    incorrect = 1;
-                    return
+                    if (cell_value) {
+                        // if cell is selected but not in code, flag as wrong and end loop
+                        incorrect = 1;
+                        break
+                    } else {
+                        // if cell is not selected and is not in code, do nothing
+                    }
                 }
-            } else {
-                if (cell_value) {
-                    // if cell is selected but not in code, flag as wrong and end loop
-                    incorrect = 1;
-                    return
-                } else {
-                    // if cell is not selected and is not in code, do nothing
-                }
-            }
 
+            }
+        }
+        if (incorrect === 0) {
+            location.assign('/myst/secret/');
         }
     }
-    if (incorrect === 0) {
-        location.assign('/myst/secret/');
-    }
-
 };
 
 </script>
