@@ -108,9 +108,6 @@ once made its own branded game show? They did! And here is more information abou
     
     
     
-- [Hollywood's (Gay) China Problem](https://www.youtube.com/watch?v=zIsQ502N0fg) by James Somerton. A not-uncommon complaint: 
-"Hollywood won't put good gay representation in films because of the Chinese market." But is it true? (Hint: No!)
-
 - [Love Never Dies: A Magnificent Trashfire Sequel to Phantom of the Opera](https://www.youtube.com/watch?v=Pfz-_WxGu3Y) by Lindsay Ellis. If you're reading this
 at all then I don't imagine Lindsay Ellis needs further explanation. 
 
