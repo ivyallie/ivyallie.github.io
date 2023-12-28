@@ -3,6 +3,7 @@ title: Secret Page!
 supertitle: Myst in Retrospect
 layout: myst
 permalink: /myst/secret/
+license: CC BY-NC-SA 4.0
 ---
 You solved the secret fireplace code! I hope you had as much fun cracking it as I had putting
 it together. Your reward, such as it is: some selections from my sketchbook revealing the process
