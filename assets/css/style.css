@@ -710,11 +710,22 @@ ul.front_page_recent a { font-weight: bold;}
 
 ul.front_page_recent span.datestamp {color:#555;}
 
-.myst_image {
+#content .myst_image {
     float: left;
     margin-right: 20pt;
     width: 50%;
     
+}
+
+#content blockquote.epigraph {
+    font-size:1em;
+    font-style: italic;
+    margin:2em auto;
+}
+
+#content .fnblock p {
+    text-indent:0;
+    font-size:1em;
 }
 
 @media screen and (min-width: 1050px) {

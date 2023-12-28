@@ -3,6 +3,7 @@ title: Secret Page!
 supertitle: Myst in Retrospect
 layout: myst
 permalink: /myst/secret/
+license: CC BY-NC-SA 4.0
 ---
 You solved the secret fireplace code! I hope you had as much fun cracking it as I had putting
 it together. Your reward, such as it is: some selections from my sketchbook revealing the process
@@ -39,5 +40,6 @@ Rough sketch for the Stoneship telescope. The perspective on this one was a real
 I'm pleased with how it turned out.
 
 ## Puzzle-Solver Hall of Fame
-If you're reading this, you may be the first person to solve the puzzle! Please send me an email
-to secure your rightful place on the page!
+Be it known that the following persons successfully solved the fireplace puzzle!
+
+1. Adrian Neville (September 2023)

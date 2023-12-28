@@ -2,6 +2,7 @@
 title: Myst in Retrospect
 layout: default
 categories: [videogames]
+license: CC BY-NC-SA 4.0
 ---
 <img src="/assets/images/myst/mystebook.jpg" style="float:right;" class="disposable"/>
 <p>Newly revised and expanded for the 30th anniversary of the series in 2023, <em>Myst in Retrospect</em> is a collection of essays exploring the groundbreaking adventure game series.
@@ -15,21 +16,20 @@ print edition was published in 2016. The new 2023 edition features original illu
 <li><a href="https://a.co/d/0kFVU0h">Get the print version from Amazon</a></li>
 </ul>
 
-<h2>Essay index (2016 version)</h2>
-<p>The revised versions of the essays will be debuting online soon, but in the meantime, feel free
-to peruse these older versions.</p>
+<h2>Essay index</h2>
 <ol class="title-index">
-    <li><a href="./myst">Myst.</a>  Bring the red pages! Or the blue pages.</li>
-    <li><a href="./atrus">The Book of Atrus.</a> Your first dose of backstory.</li>
-    <li><a href="./riven">Riven.</a> The <em>Moby-Dick</em> of adventure games.</li>
-    <li><a href="./dni">The Book of D'ni.</a> In which Atrus violates the Prime Directive.</li>
-    <li><a href="./exile">Exile.</a> The one with Brad Dourif in it.</li>
-    <li><a href="./revelation">Revelation.</a> How Yeesha got so screwed up.</li>
-    <li><a href="./tiana">The Book of Ti'ana.</a> A girl gets into the clubhouse and ruins everything.</li>
-    <li><a href="./agesbeyondmyst">Uru: Ages Beyond Myst.</a> Surprise! The D'ni were the bad guys the whole time.</li>
-    <li><a href="./todni">Uru: To D'ni.</a> You found the thingies! Next: find more thingies.</li>
-    <li><a href="./pots">Uru: The Path of the Shell.</a> The answer is fifteen minutes.</li>
-    <li><a href="./endofages">End of Ages.</a> No fear, Esher's here!</li>
+    <li><a href="./myst">Myst.</a></li>
+    <li><a href="./atrus">The Book of Atrus.</a></li>
+    <li><a href="./riven">Riven.</a></li>
+    <li><a href="./dni">The Book of D'ni.</a></li>
+    <li><a href="./exile">Exile.</a></li>
+    <li><a href="./revelation">Revelation.</a></li>
+    <li><a href="./tiana">The Book of Ti'ana.</a></li>
+    <li><a href="./agesbeyondmyst">Uru: Ages Beyond Myst.</a></li>
+    <li><a href="./todni">Uru: To D'ni.</a></li>
+    <li><a href="./pots">Uru: The Path of the Shell.</a></li>
+    <li><a href="./endofages">End of Ages.</a></li>
+    <li><a href="./remaking">The Remaking of Myst</a>. Masterpiece Editions, realMyst, and VR</li>
     <li><a href="./conclusion">The Great Tree of Possibilities.</a> Final thoughts on the series.</li>
 </ol>
 
@@ -118,44 +118,63 @@ the solution. You don't wanna be a cheater do you? ;)
 
 <script>
 
-
-
 let columns = ['a','b','c','d','e','f','g','h'];
 
-let code = ['c1','d1','f1','h1','d2','b3','c3','e3','f3','g3','b4','c4','g4','a5','e5','f5','h5','b6','c6','d6','f6'];
+let classic = ['c1','d1','f1','h1','d2','b3','c3','e3','f3','g3','b4','c4','g4','a5','e5','f5','h5','b6','c6','d6','f6'];
+
+let remake = ['a1', 'c1', 'e1', 'f1', 'g1', 'c2', 'd2', 'e2', 'f2', 'a3', 'c3', 'd3', 'g3', 'a4', 'b4', 'f4', 'a5', 'e5', 'e6', 'f6', 'g6', 'h6'];
+
+let codes = [remake,classic];
 
 let submit_fireplace = function() {
-    let incorrect = 0;
-    for (let r = 1; r < 7; r++) {
-        for (const element of columns) {
-            let cell = element+r;
-            let cell_element = document.getElementById(cell);
-            let cell_value = cell_element.checked;
-            let cell_in_code = code.includes(cell);
-            if (cell_in_code) {
-                if (cell_value) {
-                    // do nothing if cell is in code and set to True
+    for (let i = 0; i < codes.length; i++) {
+        let incorrect = 0;
+        for (let r = 1; r < 7; r++) {
+            for (const element of columns) {
+                let cell = element + r;
+                let cell_element = document.getElementById(cell);
+                let cell_value = cell_element.checked;
+                let cell_in_code = codes[i].includes(cell);
+                if (cell_in_code) {
+                    if (cell_value) {
+                        // do nothing if cell is in code and set to True
+                    } else {
+                        // if cell is in code but not selected, flag as wrong and end loop
+                        incorrect = 1;
+                        break
+                    }
                 } else {
-                    // if cell is in code but not selected, flag as wrong and end loop
-                    incorrect = 1;
-                    return
+                    if (cell_value) {
+                        // if cell is selected but not in code, flag as wrong and end loop
+                        incorrect = 1;
+                        break
+                    } else {
+                        // if cell is not selected and is not in code, do nothing
+                    }
                 }
-            } else {
-                if (cell_value) {
-                    // if cell is selected but not in code, flag as wrong and end loop
-                    incorrect = 1;
-                    return
-                } else {
-                    // if cell is not selected and is not in code, do nothing
-                }
-            }
 
+            }
+        }
+        if (incorrect === 0) {
+            location.assign('/myst/secret/');
         }
     }
-    if (incorrect === 0) {
-        location.assign('/myst/secret/');
-    }
-
 };
 
 </script>
+
+<h2>Acknowledgements</h2>
+
+<h4 class="sigil_not_in_toc">For the first edition:</h4>
+
+  <p>First and foremost, I’d like to thank the people who read this series when it first ran on my blog, especially those who took the time to write thoughtful comments. Without you I likely would never have created this book.</p>
+
+  <p>Special thanks to Michael Maresch, whose library of <i>Myst</i> ephemera was invaluable, and to Carolyn Addison, who critiqued the first draft of the feminism chapter.</p>
+
+  <h4 class="sigil_not_in_toc">For the second edition:</h4>
+
+  <p>Special thanks to my editor, Kevin Fitzpatrick, whose insights helped immensely in strengthening and perfecting the book. He didn’t know much about <i>Myst</i> at the beginning of this project, but he does now, by God.</p>
+
+  <p>Thanks also to Masha Zhdanova for one last round of typo-hunting.</p>
+
+  <p>Thanks to Adrian Neville for volunteering to create the ePub version of the book, which was also used to create the online HTML version.</p>
